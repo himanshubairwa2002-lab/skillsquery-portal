@@ -1,0 +1,12 @@
+{
+  "name": "skillsquery-monetization-portal",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "SkillsQuery Facebook Page Monetization Accelerator & Instant Delivery Portal",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}

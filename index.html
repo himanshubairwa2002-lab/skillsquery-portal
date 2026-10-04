@@ -604,16 +604,25 @@
     // Form submission handling to Live Razorpay Payment Page
     document.getElementById('orderForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      const name = document.getElementById('custName').value;
-      const phone = document.getElementById('custPhone').value;
-      const email = document.getElementById('custEmail').value;
+      const name = document.getElementById('custName').value.trim();
+      const phone = document.getElementById('custPhone').value.trim();
+      const email = document.getElementById('custEmail').value.trim();
       
+      // Store in localStorage for instant post-payment email delivery and personalization on thank-you page
+      try {
+        localStorage.setItem('customerEmail', email);
+        localStorage.setItem('customerName', name);
+        localStorage.setItem('customerPhone', phone);
+      } catch (err) {
+        console.error('Storage error:', err);
+      }
+
       const btn = document.getElementById('payBtn');
       btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Redirecting to Secure Razorpay...';
       btn.disabled = true;
 
       // Live Razorpay Payment Page URL with prefilled parameters:
-      const checkoutUrl = `https://pages.razorpay.com/skillsquery-2026?email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}`;
+      const checkoutUrl = `https://pages.razorpay.com/skillsquery-2026?email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}&name=${encodeURIComponent(name)}`;
       window.location.href = checkoutUrl;
     });
   </script>

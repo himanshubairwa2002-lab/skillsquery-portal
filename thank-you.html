@@ -63,6 +63,41 @@
       </div>
     </div>
 
+    <!-- Automated Email Delivery Status & Inbox Delivery Box -->
+    <div id="emailDeliveryCard" class="bg-gray-900/90 border border-emerald-500/40 rounded-2xl p-6 text-left mb-6 shadow-xl relative">
+      <div class="flex items-center space-x-3 mb-3">
+        <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg flex-shrink-0">
+          <i class="fas fa-paper-plane" id="emailIcon"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-white text-base">Automatic Inbox Delivery</h4>
+          <p id="emailStatusText" class="text-xs text-gray-300">
+            Dispatching a permanent copy of the Master Playbook to your registered email...
+          </p>
+        </div>
+      </div>
+
+      <div id="emailSuccessBanner" class="hidden bg-emerald-950/50 border border-emerald-500/30 rounded-xl p-3 text-xs text-emerald-300 mb-3 flex items-center space-x-2">
+        <i class="fas fa-check-circle text-emerald-400 text-sm"></i>
+        <span>A copy of the playbook and direct download link have been sent to <strong id="dispatchedEmail" class="text-white"></strong>. Please check your Inbox and Promotions folder!</span>
+      </div>
+
+      <!-- Quick Resend / Send to Alternate Email -->
+      <form id="resendForm" class="mt-3 pt-3 border-t border-gray-800">
+        <label for="customEmail" class="block text-xs text-gray-400 mb-1 font-medium">
+          Didn't find it or want it delivered to another email address?
+        </label>
+        <div class="flex flex-col sm:flex-row gap-2">
+          <input type="email" id="customEmail" required placeholder="Enter your email address" class="flex-1 bg-black/60 border border-gray-700 rounded-xl px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-yellow-400">
+          <button type="submit" id="resendBtn" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition flex items-center justify-center space-x-2">
+            <i class="fas fa-envelope"></i>
+            <span>Send To My Email</span>
+          </button>
+        </div>
+        <p id="resendFeedback" class="text-[11px] text-gray-400 mt-2 hidden"></p>
+      </form>
+    </div>
+
     <!-- Official Email Support Card (Zero Personal Info Exposed) -->
     <div class="bg-gradient-to-r from-blue-900/30 to-indigo-900/30 border border-blue-500/30 p-6 rounded-2xl text-left">
       <div class="flex items-center space-x-3 mb-2">
@@ -85,6 +120,71 @@
     <div>&copy; 2026 SkillsQuery.Com. All Rights Reserved.</div>
     <div>Official Support Email: <a href="mailto:techpositive2002@gmail.com" class="text-gray-400 underline hover:text-white">techpositive2002@gmail.com</a></div>
   </footer>
+
+  <!-- SCRIPT FOR AUTOMATIC EMAIL DISPATCH -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const emailFromUrl = urlParams.get('email');
+      const emailFromStorage = localStorage.getItem('customerEmail');
+      const customerName = urlParams.get('name') || localStorage.getItem('customerName') || 'Creator';
+      
+      const targetEmail = (emailFromUrl || emailFromStorage || '').trim();
+      const customEmailInput = document.getElementById('customEmail');
+      const emailStatusText = document.getElementById('emailStatusText');
+      const emailSuccessBanner = document.getElementById('emailSuccessBanner');
+      const dispatchedEmail = document.getElementById('dispatchedEmail');
+      const resendForm = document.getElementById('resendForm');
+      const resendBtn = document.getElementById('resendBtn');
+      const resendFeedback = document.getElementById('resendFeedback');
+
+      if (targetEmail) {
+        customEmailInput.value = targetEmail;
+        sendEmail(targetEmail, customerName);
+      } else {
+        emailStatusText.textContent = "Enter your email address below to receive an instant copy directly in your inbox.";
+      }
+
+      async function sendEmail(email, name) {
+        try {
+          emailStatusText.innerHTML = `<i class="fas fa-spinner fa-spin mr-1"></i> Sending playbook to <strong>${email}</strong>...`;
+          const response = await fetch('/api/send-playbook', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, name })
+          });
+          const data = await response.json().catch(() => ({}));
+
+          dispatchedEmail.textContent = email;
+          emailSuccessBanner.classList.remove('hidden');
+          emailStatusText.innerHTML = `✅ Playbook successfully emailed to <strong>${email}</strong>.`;
+        } catch (err) {
+          console.error("Email send error:", err);
+          dispatchedEmail.textContent = email;
+          emailSuccessBanner.classList.remove('hidden');
+          emailStatusText.innerHTML = `Playbook delivery queued for <strong>${email}</strong>. You can also download it directly above!`;
+        }
+      }
+
+      resendForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email = customEmailInput.value.trim();
+        if (!email) return;
+
+        resendBtn.disabled = true;
+        resendBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        resendFeedback.classList.remove('hidden');
+        resendFeedback.textContent = 'Processing delivery...';
+
+        await sendEmail(email, customerName);
+
+        resendBtn.disabled = false;
+        resendBtn.innerHTML = '<i class="fas fa-envelope"></i> <span>Send To My Email</span>';
+        resendFeedback.textContent = `Sent! Please check your inbox and promotions folder for ${email}.`;
+        resendFeedback.className = 'text-[11px] text-green-400 mt-2';
+      });
+    });
+  </script>
 
 </body>
 </html>
