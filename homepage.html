@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillsQuery | The Creator & Digital Skills Ecosystem</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#05070E] text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-black">
+
+  <!-- NAVBAR -->
+  <nav class="border-b border-slate-800/80 bg-[#05070E]/80 backdrop-blur-xl sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 via-blue-600 to-indigo-600 flex items-center justify-center font-black text-white font-display text-lg shadow-lg shadow-cyan-500/20">
+          SQ
+        </div>
+        <span class="font-display font-bold text-xl tracking-tight text-white">Skills<span class="text-cyan-400">Query</span></span>
+      </div>
+      <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-300">
+        <a href="#ecosystem" class="hover:text-cyan-400 transition">Ecosystem</a>
+        <a href="#featured" class="hover:text-cyan-400 transition">Featured Playbooks</a>
+        <a href="#tools" class="hover:text-cyan-400 transition">AI Tools</a>
+        <a href="#about" class="hover:text-cyan-400 transition">About</a>
+      </div>
+      <div>
+        <a href="/courses/" class="py-2 px-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold text-xs uppercase tracking-wider transition shadow-md shadow-cyan-500/20">
+          Explore Academy →
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="relative pt-16 pb-20 md:pt-24 md:pb-28 overflow-hidden text-center max-w-5xl mx-auto px-4">
+    <div class="inline-flex items-center space-x-2 bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
+      <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+      <span>THE DIGITAL CREATOR & MONETIZATION HUB</span>
+    </div>
+
+    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-display tracking-tight text-white mb-6 leading-tight">
+      Empowering The Next Generation of <span class="bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500 bg-clip-text text-transparent">Digital Creators & Media Assets</span>
+    </h1>
+
+    <p class="text-base sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+      From high-yield social monetization playbooks to automated AI video tools and digital resources — everything you need to build profitable internet media brands.
+    </p>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+      <a href="/courses/" class="w-full sm:w-auto py-3.5 px-8 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-600 hover:from-cyan-300 hover:to-blue-500 text-slate-950 font-extrabold text-sm uppercase tracking-wider transition shadow-xl shadow-cyan-500/25">
+        Browse Active Courses
+      </a>
+      <a href="#ecosystem" class="w-full sm:w-auto py-3.5 px-8 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-white font-semibold text-sm transition">
+        View Ecosystem
+      </a>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 max-w-4xl mx-auto border-t border-slate-800/80 pt-10">
+      <div>
+        <div class="text-2xl sm:text-3xl font-black font-display text-white">100%</div>
+        <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Faceless AI Workflows</div>
+      </div>
+      <div>
+        <div class="text-2xl sm:text-3xl font-black font-display text-cyan-400">1M+</div>
+        <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Organic Monthly Reach</div>
+      </div>
+      <div>
+        <div class="text-2xl sm:text-3xl font-black font-display text-white">Tier-1</div>
+        <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">US & Global Targeting</div>
+      </div>
+      <div>
+        <div class="text-2xl sm:text-3xl font-black font-display text-green-400">24/7</div>
+        <div class="text-xs text-slate-400 mt-1 uppercase font-semibold">Instant Digital Delivery</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- THE ECOSYSTEM GRID -->
+  <section id="ecosystem" class="py-20 border-t border-slate-800/80 bg-slate-950/50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <span class="text-cyan-400 font-bold text-xs uppercase tracking-widest">Multi-Branch Architecture</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 font-display">
+          The SkillsQuery Ecosystem
+        </h2>
+        <p class="text-slate-400 max-w-xl mx-auto mt-2 text-sm sm:text-base">
+          Our subdomains host targeted platforms for education, digital downloads, software templates, and community.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Subdomain 1: Academy -->
+        <div class="bg-gradient-to-b from-slate-900 to-[#0A0E1A] border border-cyan-500/30 p-8 rounded-3xl relative overflow-hidden group hover:border-cyan-400 transition shadow-xl">
+          <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-6 border border-cyan-500/20">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="text-xs font-mono text-cyan-400 mb-1">learn.skillsquery.com</div>
+          <h3 class="text-2xl font-bold text-white font-display mb-3">SkillsQuery Academy</h3>
+          <p class="text-sm text-slate-400 leading-relaxed mb-6">
+            Actionable monetization guides, video masterclasses, and algorithm playbooks for Facebook, YouTube, and Meta Ads.
+          </p>
+          <a href="/courses/" class="inline-flex items-center text-sm font-bold text-cyan-400 group-hover:text-cyan-300">
+            Access Courses <i class="fas fa-arrow-right ml-2 text-xs group-hover:translate-x-1 transition"></i>
+          </a>
+        </div>
+
+        <!-- Subdomain 2: Tools & Prompts -->
+        <div class="bg-gradient-to-b from-slate-900 to-[#0A0E1A] border border-slate-800 p-8 rounded-3xl relative overflow-hidden group hover:border-blue-500/50 transition shadow-xl">
+          <div class="w-12 h-12 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-6 border border-blue-500/20">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="text-xs font-mono text-blue-400 mb-1">tools.skillsquery.com</div>
+          <h3 class="text-2xl font-bold text-white font-display mb-3">AI Creator Suite</h3>
+          <p class="text-sm text-slate-400 leading-relaxed mb-6">
+            Pre-engineered ChatGPT prompt vaults, Google Flow / Veo video generation SOPs, and automated CapCut editing blueprints.
+          </p>
+          <span class="inline-flex items-center text-xs text-slate-500 font-semibold uppercase tracking-wider">
+            Launching Soon
+          </span>
+        </div>
+
+        <!-- Subdomain 3: Templates & Store -->
+        <div class="bg-gradient-to-b from-slate-900 to-[#0A0E1A] border border-slate-800 p-8 rounded-3xl relative overflow-hidden group hover:border-indigo-500/50 transition shadow-xl">
+          <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl mb-6 border border-indigo-500/20">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <div class="text-xs font-mono text-indigo-400 mb-1">assets.skillsquery.com</div>
+          <h3 class="text-2xl font-bold text-white font-display mb-3">Digital Asset Hub</h3>
+          <p class="text-sm text-slate-400 leading-relaxed mb-6">
+            1080x1350 Canva templates, viral caption spreadsheets, copyright-free sound libraries, and video assets.
+          </p>
+          <span class="inline-flex items-center text-xs text-slate-500 font-semibold uppercase tracking-wider">
+            Launching Soon
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCT PREVIEW -->
+  <section id="featured" class="py-20 border-t border-slate-800">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="bg-gradient-to-r from-cyan-950/40 via-blue-950/40 to-slate-900 border-2 border-cyan-500/40 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+          <div>
+            <span class="bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
+              ⭐ HOTTEST SELLER - 2026 EDITION
+            </span>
+            <h3 class="text-3xl font-black text-white font-display mt-3">
+              Facebook & YouTube Monetization Playbook
+            </h3>
+            <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-lg leading-relaxed">
+              The complete 90+ page playbook that shows you how to build high-reach faceless channels, get US audience traffic, and activate monetization.
+            </p>
+            <div class="flex items-center space-x-3 mt-4">
+              <span class="text-slate-500 line-through text-lg font-bold">₹1,999</span>
+              <span class="text-3xl font-black text-cyan-400 font-display">₹299</span>
+              <span class="text-xs bg-green-500/10 text-green-400 border border-green-500/20 px-2.5 py-1 rounded font-bold">85% OFF</span>
+            </div>
+          </div>
+          <div class="w-full md:w-auto flex-shrink-0">
+            <a href="/courses/" class="block text-center py-4 px-8 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-300 hover:to-blue-400 text-slate-950 font-black text-base uppercase tracking-wider shadow-lg transition">
+              Get Instant Access →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-12 border-t border-slate-900 text-xs text-slate-500">
+    <div class="max-w-5xl mx-auto px-4 text-center space-y-4">
+      <div class="flex items-center justify-center space-x-2">
+        <span class="font-display font-bold text-white text-base">Skills<span class="text-cyan-400">Query</span></span>
+        <span class="text-slate-600">|</span>
+        <span class="text-slate-400">support@skillsquery.com</span>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6 text-slate-400 font-medium pt-2">
+        <a href="#about" class="hover:text-white underline">About Us</a>
+        <a href="#contact" class="hover:text-white underline">Contact Us</a>
+        <a href="#terms" class="hover:text-white underline">Terms & Conditions</a>
+        <a href="#privacy" class="hover:text-white underline">Privacy Policy</a>
+        <a href="#refund" class="hover:text-white underline">Refund & Cancellation</a>
+      </div>
+      <p class="text-[11px] text-slate-600 max-w-xl mx-auto pt-2">
+        &copy; 2026 SkillsQuery.Com. All rights reserved. Registered education and digital media training provider.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
