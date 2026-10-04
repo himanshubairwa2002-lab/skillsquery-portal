@@ -685,15 +685,9 @@
       const email = document.getElementById('custEmail').value;
       
       const btn = document.getElementById('payBtn');
-      btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Redirecting to Secure Gateway...';
-      btn.disabled = true;
-
-      // In production, this redirects to your Cashfree Payment Form URL:
-      // window.location.href = `https://payments.cashfree.com/forms/YOUR_FORM_ID?name=${encodeURIComponent(name)}&phone=${phone}&email=${encodeURIComponent(email)}`;
-      
-      alert(`Order initialized for ${name} (₹299)!\n\nTo activate live payments, attach your Cashfree Payment Form link or API keys in the form handler.`);
-      btn.innerHTML = '<i class="fas fa-lock text-sm mr-2"></i> Pay ₹299 & Download Now';
-      btn.disabled = false;
+      // Redirect to Live Razorpay Payment Page with prefilled customer data:
+      const checkoutUrl = `https://pages.razorpay.com/skillsquery-2026?email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}`;
+      window.location.href = checkoutUrl;
     });
   </script>
 </body>
