@@ -1,5 +1,6 @@
 // Vercel Serverless Function: /api/webhook
-// Razorpay Webhook handler to dispatch email upon payment.captured
+// Razorpay Webhook handler to dispatch email upon payment.captured & send Meta CAPI purchase event
+import crypto from 'crypto';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -97,6 +98,46 @@ export default async function handler(req, res) {
               html: emailHtml
             })
           });
+        }
+
+        // Send server-side conversion event to Meta Conversions API (CAPI)
+        const metaPixelId = process.env.META_PIXEL_ID || '2043692866312535';
+        const metaAccessToken = process.env.META_ACCESS_TOKEN;
+        if (metaAccessToken && metaPixelId) {
+          try {
+            const hashedEmail = crypto.createHash('sha256').update(email.trim().toLowerCase()).digest('hex');
+            const hashedPhone = contact ? crypto.createHash('sha256').update(contact.replace(/\D/g, '')).digest('hex') : null;
+
+            const capiPayload = {
+              data: [
+                {
+                  event_name: 'Purchase',
+                  event_time: Math.floor(Date.now() / 1000),
+                  action_source: 'website',
+                  event_source_url: 'https://www.skillsquery.com/thank-you.html',
+                  user_data: {
+                    em: [hashedEmail],
+                    ph: hashedPhone ? [hashedPhone] : []
+                  },
+                  custom_data: {
+                    currency: 'INR',
+                    value: 299.00,
+                    order_id: payment.id,
+                    content_name: 'Facebook Page Monetization Master Playbook 2026'
+                  }
+                }
+              ]
+            };
+
+            await fetch(`https://graph.facebook.com/v21.0/${metaPixelId}/events?access_token=${metaAccessToken}`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(capiPayload)
+            });
+            console.log(`[Meta CAPI] Purchase event sent for order ${payment.id}`);
+          } catch (capiErr) {
+            console.error('[Meta CAPI] Error dispatching event:', capiErr);
+          }
         }
       }
     }
