@@ -251,8 +251,7 @@ When running campaigns or research across different models (Gemini, Claude, GPT,
 * **Ad 2 (High-CTR Earning Proof Image Ad)**:
   * **Ad ID**: `120251947838900548` (`SkillQuery_FB_Monetization_HighCTR_Image_Ad_v1`)
   * **Creative ID**: `929533736582609` (`SkillQuery_FB_Monetization_HighCTR_Image_Creative`)
-  * **Image Hash**: `02730f0589a28786be290ad94f4f12e5` (Authentic Indian creator with live Creator Studio dashboard showing ₹84,750 monetization earnings and In-Stream approval)
-* **Status**: `PAUSED` (Ready to activate anytime from Meta Ads MCP or Ads Manager)
+  * **Status**: `ACTIVE` (Live and delivering impressions via Meta Ads MCP)
 
 ### High-Converting Hinglish Ad Copy Template
 * **Primary Text**:
