@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en" style=""><head>
+<meta charset="UTF-8">
+<title>Facebook Money Playbook 2026 – English Edition</title>
+<style>
+:root{--b:#1877F2;--p:#7B2FF7;--g:#12B76A;--o:#F79009;--r:#F04438;--d:#101828;--m:#475467;--l:#F2F4F7;--y:#FDB022}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#d0d5dd;color:var(--d);line-height:1.5}
+.bar{position:sticky;top:0;z-index:9;background:var(--d);color:#fff;display:flex;gap:10px;align-items:center;justify-content:center;padding:10px;font-size:14px;flex-wrap:wrap}
+.bar button{background:linear-gradient(90deg,var(--b),var(--p));color:#fff;border:0;border-radius:20px;padding:8px 18px;font-weight:700;cursor:pointer}
+.page{width:210mm;min-height:297mm;margin:16px auto;background:#fff;position:relative;overflow:hidden;padding:16mm 16mm 20mm;box-shadow:0 8px 30px rgba(0,0,0,.18);page-break-after:always;break-after:page}
+.page:last-child{page-break-after:auto}
+.foot{position:absolute;bottom:8mm;left:16mm;right:16mm;display:flex;justify-content:space-between;font-size:10px;color:var(--m);border-top:1px solid #e4e7ec;padding-top:6px}
+.foot a{color:var(--b);text-decoration:none}
+h1{font-size:34px;line-height:1.15}
+h2{font-size:26px;line-height:1.2;margin-bottom:6px}
+h3{font-size:16px;margin:14px 0 6px}
+p{font-size:13.5px;margin:6px 0}
+li{font-size:13.5px;margin:4px 0}
+.tag{display:inline-block;background:linear-gradient(90deg,var(--b),var(--p));color:#fff;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:5px 12px;border-radius:20px;margin-bottom:10px}
+.lead{font-size:15px;color:var(--m);margin-bottom:12px}
+.grad{background:linear-gradient(90deg,var(--b),var(--p));-webkit-background-clip:text;background-clip:text;color:transparent}
+.card{border-radius:14px;padding:14px;background:var(--l);margin:8px 0}
+.card.blue{background:#EAF2FF;border-left:5px solid var(--b)}
+.card.green{background:#E7F8EF;border-left:5px solid var(--g)}
+.card.orange{background:#FFF4E5;border-left:5px solid var(--o)}
+.card.red{background:#FEECEB;border-left:5px solid var(--r)}
+.card.purple{background:#F3ECFF;border-left:5px solid var(--p)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.big{font-size:30px;font-weight:900}
+.ico{font-size:28px;line-height:1}
+.steps{counter-reset:s;list-style:none}
+.steps li{counter-increment:s;position:relative;padding:8px 10px 8px 46px;background:#fff;border:1px solid #e4e7ec;border-radius:12px;margin:7px 0}
+.steps li:before{content:counter(s);position:absolute;left:10px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--b),var(--p));color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center}
+table{width:100%;border-collapse:separate;border-spacing:0;font-size:12.5px;margin:8px 0;border-radius:12px;overflow:hidden;border:1px solid #e4e7ec}
+th{background:var(--d);color:#fff;text-align:left;padding:8px 10px}
+td{padding:7px 10px;border-top:1px solid #e4e7ec;vertical-align:top}
+tr:nth-child(even) td{background:#F9FAFB}
+.check{list-style:none}
+.check li{display:flex;gap:10px;align-items:flex-start;padding:7px 10px;border-radius:10px;background:#fff;border:1px solid #e4e7ec;margin:6px 0;cursor:pointer;user-select:none}
+.check li .bx{flex:0 0 20px;height:20px;border:2px solid var(--b);border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:900;color:#fff}
+.check li.on .bx{background:var(--g);border-color:var(--g)}
+.check li.on .bx:after{content:"✓"}
+.prompt{background:#0B1220;color:#D1E0FF;font-family:Consolas,Menlo,monospace;font-size:11.5px;border-radius:12px;padding:14px;white-space:pre-wrap;position:relative;margin:8px 0}
+.copy{position:absolute;top:8px;right:8px;background:var(--b);color:#fff;border:0;border-radius:8px;padding:4px 10px;font-size:11px;cursor:pointer}
+.pill{display:inline-block;padding:5px 11px;border-radius:20px;font-size:12px;font-weight:700;margin:3px;background:#fff;border:2px solid var(--b);color:var(--b)}
+.toc a{display:flex;justify-content:space-between;align-items:center;text-decoration:none;color:var(--d);padding:11px 14px;border-radius:12px;margin:7px 0;background:var(--l);font-weight:700;font-size:15px;transition:.2s}
+.toc a:hover{background:#EAF2FF;transform:translateX(4px)}
+.toc a span.n{display:inline-flex;width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--b),var(--p));color:#fff;align-items:center;justify-content:center;margin-right:12px}
+.chap{background:linear-gradient(135deg,var(--b),var(--p));color:#fff;border-radius:18px;padding:18px 20px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center}
+.chap h2{color:#fff;margin:0}
+.chap .num{font-size:52px;font-weight:900;opacity:.35}
+.slider{height:10px;border-radius:6px;background:#e4e7ec;position:relative;margin:4px 0 10px}
+.slider i{position:absolute;height:100%;border-radius:6px;background:linear-gradient(90deg,var(--b),var(--p))}
+.hook{background:#fff;border:1px solid #e4e7ec;border-radius:10px;padding:7px 10px;font-size:12.5px;margin:5px 0}
+.hook b{color:var(--p)}
+.cover{background:linear-gradient(150deg,#0B1F4D 0%,#1877F2 45%,#7B2FF7 100%);color:#fff}
+.cover .foot{color:#dbe4ff;border-color:rgba(255,255,255,.25)}
+.cover .foot a{color:#fff}
+.badge{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;margin:4px 6px 4px 0}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.vs .col{border-radius:14px;padding:12px}
+.note{font-size:11px;color:var(--m);font-style:italic}
+@media print{
+ body{background:#fff}
+ .bar{display:none}
+ .page{margin:0;box-shadow:none;width:210mm;height:297mm;min-height:297mm}
+ @page{size:A4;margin:0}
+}
+</style>
+</head>
+<body>
+<div class="bar">📘 Facebook Money Playbook 2026 · English Edition <button onclick="window.print()">⬇ Save as PDF</button><span style="opacity:.75">Tip: in the print window choose "Save as PDF", paper A4, and turn ON "Background graphics".</span></div>
+
+<!-- COVER -->
+<section class="page cover" id="cover">
+ <span class="badge">2026 EDITION</span><span class="badge">SIMPLE ENGLISH</span><span class="badge">FOR CREATORS IN INDIA</span>
+ <h1 style="font-size:46px;margin-top:22px">Facebook Money<br>Playbook 2026</h1>
+ <p style="font-size:19px;color:#dbe4ff;margin-top:12px;max-width:150mm">Earn from Facebook <b style="color:#fff">without showing your face</b>, without recording your voice, and without costly equipment.</p>
+ <svg viewBox="0 0 500 360" style="width:100%;margin-top:22px">
+  <defs><linearGradient id="cg" x1="0" x2="1"><stop offset="0" stop-color="#12B76A"></stop><stop offset="1" stop-color="#FDB022"></stop></linearGradient></defs>
+  <circle cx="250" cy="185" r="160" fill="rgba(255,255,255,.08)"></circle>
+  <circle cx="250" cy="185" r="115" fill="rgba(255,255,255,.08)"></circle>
+  <rect x="180" y="40" width="140" height="280" rx="24" fill="#0B1220" stroke="#fff" stroke-width="4"></rect>
+  <rect x="192" y="62" width="116" height="236" rx="12" fill="url(#cg)"></rect>
+  <circle cx="250" cy="165" r="34" fill="rgba(255,255,255,.9)"></circle>
+  <polygon points="241,148 241,182 268,165" fill="#7B2FF7"></polygon>
+  <rect x="204" y="225" width="70" height="8" rx="4" fill="#fff"></rect><rect x="204" y="240" width="92" height="8" rx="4" fill="rgba(255,255,255,.7)"></rect>
+  <circle cx="294" cy="268" r="9" fill="#F04438"></circle><text x="290" y="272" font-size="10" fill="#fff">♥</text>
+  <g><circle cx="90" cy="110" r="38" fill="#FDB022"></circle><text x="72" y="124" font-size="40" font-weight="900" fill="#7a4b00">$</text></g>
+  <g><circle cx="410" cy="95" r="32" fill="#12B76A"></circle><text x="397" y="108" font-size="34" font-weight="900" fill="#fff">₹</text></g>
+  <polyline points="350,300 385,265 410,280 450,220" fill="none" stroke="#FDB022" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></polyline>
+  <polygon points="450,205 462,230 438,228" fill="#FDB022"></polygon>
+  <g transform="translate(55,230)"><rect width="90" height="62" rx="10" fill="#fff"></rect><rect x="10" y="12" width="40" height="7" rx="3" fill="#1877F2"></rect><rect x="10" y="26" width="70" height="6" rx="3" fill="#d0d5dd"></rect><rect x="10" y="38" width="55" height="6" rx="3" fill="#d0d5dd"></rect><text x="62" y="20" font-size="14">🤖</text></g>
+ </svg>
+ <p style="font-size:15px;margin-top:10px;color:#fff"><b>Inside:</b> how Facebook pays · best niches · AI video steps · getting views · staying safe · getting paid in India · 50 hooks</p>
+ <div class="foot"><span>Support: <a href="mailto:techpositive2002@gmail.com">techpositive2002@gmail.com</a></span><span>Not affiliated with Meta</span></div>
+</section>
+
+<!-- CONTENTS -->
+<section class="page" id="contents">
+ <span class="tag">Start here</span>
+ <h2>What's inside <span class="grad">this guide</span></h2>
+ <p class="lead">Tap any chapter to jump to it. Each chapter ends with a simple checklist.</p>
+ <div class="toc">
+  <a href="#ch1"><span><span class="n">1</span>How Facebook pays creators in 2026</span><span>›</span></a>
+  <a href="#ch2"><span><span class="n">2</span>Pick a niche that pays more</span><span>›</span></a>
+  <a href="#ch3"><span><span class="n">3</span>Make faceless videos with AI</span><span>›</span></a>
+  <a href="#ch4"><span><span class="n">4</span>Get more views the right way</span><span>›</span></a>
+  <a href="#ch5"><span><span class="n">5</span>Original content rules (stay safe)</span><span>›</span></a>
+  <a href="#ch6"><span><span class="n">6</span>Get paid in India</span><span>›</span></a>
+  <a href="#ch7"><span><span class="n">7</span>50 hooks + caption templates</span><span>›</span></a>
+  <a href="#end"><span><span class="n">8</span>Support and license</span><span>›</span></a>
+ </div>
+ <div class="grid3" style="margin-top:14px">
+  <div class="card blue"><div class="ico">⏱️</div><b>15–25 min</b><p>to make one Reel once you learn the system</p></div>
+  <div class="card green"><div class="ico">💵</div><b>$1–$10</b><p>est. per 1,000 views from US/UK viewers</p></div>
+  <div class="card purple"><div class="ico">🎯</div><b>30 days</b><p>step-by-step plan to build your page</p></div>
+ </div>
+ <div class="card orange"><b>⚠️ Honest note:</b> Nobody can promise money or viral views. This guide shows the real rules and the safest, fastest path. Facebook changes its rules often, so always check your own dashboard.</div>
+ <div class="foot"><span>Facebook Money Playbook 2026</span><span>Page 2</span></div>
+</section>
+
+<!-- CH1 -->
+<section class="page" id="ch1">
+ <div class="chap"><div><span style="font-size:12px;letter-spacing:2px;opacity:.85">CHAPTER</span><h2>How Facebook Pays Creators in 2026</h2></div><div class="num">01</div></div>
+ <p class="lead">Facebook now has <b>one program</b> called <b>Content Monetization</b>. One approval lets you earn from all your posts.</p>
+ <svg viewBox="0 0 600 220" style="width:100%">
+  <g font-family="Segoe UI,Arial" font-size="14" font-weight="700">
+   <rect x="10" y="10" width="140" height="34" rx="17" fill="#EAF2FF" stroke="#1877F2"></rect><text x="40" y="32" fill="#1877F2">🎬 Reels</text>
+   <rect x="10" y="52" width="140" height="34" rx="17" fill="#EAF2FF" stroke="#1877F2"></rect><text x="30" y="74" fill="#1877F2">📺 Long videos</text>
+   <rect x="10" y="94" width="140" height="34" rx="17" fill="#EAF2FF" stroke="#1877F2"></rect><text x="40" y="116" fill="#1877F2">🖼️ Photos</text>
+   <rect x="10" y="136" width="140" height="34" rx="17" fill="#EAF2FF" stroke="#1877F2"></rect><text x="32" y="158" fill="#1877F2">✍️ Text posts</text>
+   <rect x="10" y="178" width="140" height="34" rx="17" fill="#EAF2FF" stroke="#1877F2"></rect><text x="40" y="200" fill="#1877F2">⭕ Stories</text>
+  </g>
+  <g stroke="#98A2B3" stroke-width="2" fill="none"><path d="M150 27 C210 27 210 110 250 110"></path><path d="M150 69 C200 69 210 110 250 110"></path><path d="M150 111 L250 110"></path><path d="M150 153 C200 153 210 110 250 110"></path><path d="M150 195 C210 195 210 110 250 110"></path></g>
+  <circle cx="330" cy="110" r="82" fill="url(#g1)"></circle>
+  <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#1877F2"></stop><stop offset="1" stop-color="#7B2FF7"></stop></linearGradient></defs>
+  <text x="330" y="100" text-anchor="middle" fill="#fff" font-size="15" font-weight="800" font-family="Segoe UI,Arial">Content</text>
+  <text x="330" y="120" text-anchor="middle" fill="#fff" font-size="15" font-weight="800" font-family="Segoe UI,Arial">Monetization</text>
+  <text x="330" y="140" text-anchor="middle" fill="#dbe4ff" font-size="11" font-family="Segoe UI,Arial">one program</text>
+  <path d="M412 110 L470 110" stroke="#12B76A" stroke-width="5"></path><polygon points="470,100 488,110 470,120" fill="#12B76A"></polygon>
+  <circle cx="535" cy="110" r="48" fill="#E7F8EF" stroke="#12B76A" stroke-width="3"></circle><text x="535" y="122" text-anchor="middle" font-size="36">💰</text>
+ </svg>
+ <div class="grid2">
+  <div class="card green"><div class="big" style="color:var(--g)">~$3 billion</div><p>Facebook paid creators nearly this much in 2025, its highest ever.</p></div>
+  <div class="card blue"><div class="big" style="color:var(--b)">60%</div><p>of that money went to <b>Reels</b>. So Reels are your main tool.</p></div>
+ </div>
+ <h3>What changed?</h3>
+ <p>The old programs (In-Stream Ads, Ads on Reels and the Performance Bonus) are now merged into this one program. Creator Studio is gone. Everything is in your <b>Professional Dashboard</b>.</p>
+ <h3>How to join (it's invite-only)</h3>
+ <ol class="steps">
+  <li>Open the Facebook app and go to your <b>Professional Dashboard</b>.</li>
+  <li>Tap <b>Monetization</b>, then <b>Content Monetization</b>.</li>
+  <li>Fill in the <b>"express interest"</b> form.</li>
+  <li>Keep posting original content. Facebook sends invites from time to time.</li>
+ </ol>
+ <div class="foot"><span>Chapter 1 · How Facebook pays</span><span>Page 3</span></div>
+</section>
+
+<section class="page">
+ <div class="vs">
+  <div class="col" style="background:#FEECEB"><b style="color:var(--r)">❌ MYTH</b><p>"You need 5,000 followers and 60,000 watch minutes."</p><p class="note">These were rules of the old In-Stream Ads program.</p></div>
+  <div class="col" style="background:#E7F8EF"><b style="color:var(--g)">✅ TRUTH</b><p>There is <b>no public follower number</b>. Facebook invites pages with original content, good watch time and a clean record.</p></div>
+ </div>
+ <h3>📊 The 3 numbers that decide your income</h3>
+ <div class="grid3">
+  <div class="card blue"><div class="ico">✅</div><b>Qualified Views</b><p>Views that can earn money.</p></div>
+  <div class="card green"><div class="ico">💵</div><b>Earnings Rate</b><p>Money earned per 1,000 qualified views. This is your real "RPM".</p></div>
+  <div class="card orange"><div class="ico">🔍</div><b>Non-Qualified Views</b><p>Facebook tells you why some views did not earn. Read it weekly and fix it.</p></div>
+ </div>
+ <h3>🚀 Shortcut: Creator Fast Track</h3>
+ <p>Already have followers on Instagram, YouTube or TikTok? You can skip the waiting line.</p>
+ <table><tbody><tr><th>Followers on another app</th><th>Guaranteed pay</th><th>Extra benefits</th></tr>
+ <tr><td>100,000+</td><td><b>$1,000 / month</b> for 3 months</td><td rowspan="2">Instant Content Monetization access + more reach on Reels</td></tr>
+ <tr><td>1,000,000+</td><td><b>$3,000 / month</b> for 3 months</td></tr></tbody></table>
+ <div class="card purple"><b>💡 Smart idea:</b> Grow your faceless page on YouTube Shorts or Instagram Reels too. When it crosses 100K, apply for Creator Fast Track.</div>
+ <h3>🟢 Keep your page healthy</h3>
+ <p>Open <b>Professional Dashboard → Monetization → Monetization Status</b> every week.</p>
+ <div class="grid3">
+  <div class="card green"><b>🟢 Green</b><p>All good. Keep going.</p></div>
+  <div class="card orange"><b>🟠 Orange</b><p>Earnings are limited. Fix the issue shown.</p></div>
+  <div class="card red"><b>🔴 Red</b><p>Earnings paused. Fix it before posting more of the same type.</p></div>
+ </div>
+ <div class="foot"><span>Chapter 1 · How Facebook pays</span><span>Page 4</span></div>
+</section>
+
+<section class="page">
+ <span class="tag">Your plan</span>
+ <h2>Your <span class="grad">30-Day Action Plan</span></h2>
+ <p class="lead">Follow this week by week. The goal: a page good enough to get invited.</p>
+ <svg viewBox="0 0 600 70" style="width:100%">
+  <defs><linearGradient id="tl" x1="0" x2="1"><stop offset="0" stop-color="#1877F2"></stop><stop offset="1" stop-color="#12B76A"></stop></linearGradient></defs>
+  <rect x="20" y="30" width="560" height="10" rx="5" fill="url(#tl)"></rect>
+  <g font-family="Segoe UI,Arial" font-weight="800" font-size="13" text-anchor="middle">
+  <circle cx="60" cy="35" r="18" fill="#1877F2"></circle><text x="60" y="40" fill="#fff">1</text><text x="60" y="14" fill="#1877F2">Days 1–4</text>
+  <circle cx="220" cy="35" r="18" fill="#4F5BF2"></circle><text x="220" y="40" fill="#fff">2</text><text x="220" y="14" fill="#4F5BF2">Days 5–14</text>
+  <circle cx="380" cy="35" r="18" fill="#7B2FF7"></circle><text x="380" y="40" fill="#fff">3</text><text x="380" y="14" fill="#7B2FF7">Days 15–21</text>
+  <circle cx="540" cy="35" r="18" fill="#12B76A"></circle><text x="540" y="40" fill="#fff">4</text><text x="540" y="14" fill="#12B76A">Days 22–30</text></g>
+ </svg>
+ <div class="grid2">
+  <div class="card blue"><b>🏗️ Days 1–4: Set up</b><ul style="margin-left:16px"><li>Make a Facebook <b>Page</b> in ONE niche.</li><li>Write the name and bio in English.</li><li>Study 10 big US pages in your niche.</li><li>Write 30 video topics.</li></ul></div>
+  <div class="card purple"><b>🎬 Days 5–14: Start posting</b><ul style="margin-left:16px"><li>Make 5 Reels in one sitting.</li><li>Post 1–2 Reels every day.</li><li>Add 1 photo or text post daily.</li><li>Reply to every comment within 1 hour.</li></ul></div>
+  <div class="card orange"><b>📈 Days 15–21: Learn and apply</b><ul style="margin-left:16px"><li>Check which Reels people watched longest.</li><li>Make more of your top 3 styles.</li><li>Fill the Content Monetization interest form.</li><li>Fix anything that is not green.</li></ul></div>
+  <div class="card green"><b>🚀 Days 22–30: Scale up</b><ul style="margin-left:16px"><li>Post 2 Reels a day.</li><li>Add one 3–5 minute video each week.</li><li>Post Stories every day.</li><li>Plan next month's 60 topics.</li></ul></div>
+ </div>
+ <h3>✅ Chapter 1 checklist</h3>
+ <ul class="check">
+  <li><span class="bx"></span>I made a Facebook Page (not just a profile) in one niche.</li>
+  <li><span class="bx"></span>I found the Content Monetization interest form in my dashboard.</li>
+  <li><span class="bx"></span>I know my 3 numbers: Qualified Views, Earnings Rate, Non-Qualified Views.</li>
+  <li><span class="bx"></span>My Monetization Status is all green.</li>
+ </ul>
+ <div class="foot"><span>Chapter 1 · 30-day plan</span><span>Page 5</span></div>
+</section>
+
+<!-- CH2 -->
+<section class="page" id="ch2">
+ <div class="chap"><div><span style="font-size:12px;letter-spacing:2px;opacity:.85">CHAPTER</span><h2>Pick a Niche That Pays More</h2></div><div class="num">02</div></div>
+ <p class="lead">The biggest money secret: <b>who</b> watches matters more than <b>how many</b> watch.</p>
+ <h3>💵 Why US viewers pay much more</h3>
+ <p>Facebook pays you from ad money. Advertisers pay much more to show ads to people in the USA, UK, Canada and Australia. So the same views can earn <b>20 to 50 times more</b>.</p>
+ <svg viewBox="0 0 600 170" style="width:100%">
+  <g font-family="Segoe UI,Arial" font-size="13" font-weight="700">
+  <text x="0" y="35">🇺🇸 USA / UK / CA / AU</text>
+  <rect x="190" y="18" width="380" height="26" rx="13" fill="#E7F8EF"></rect><rect x="190" y="18" width="380" height="26" rx="13" fill="url(#gg)"></rect>
+  <defs><linearGradient id="gg" x1="0" x2="1"><stop offset="0" stop-color="#12B76A" stop-opacity=".35"></stop><stop offset="1" stop-color="#12B76A"></stop></linearGradient></defs>
+  <text x="560" y="36" text-anchor="end" fill="#fff">$1 – $10</text>
+  <text x="0" y="95">🇮🇳 India (domestic)</text>
+  <rect x="190" y="78" width="380" height="26" rx="13" fill="#F2F4F7"></rect><rect x="190" y="78" width="22" height="26" rx="13" fill="#F79009"></rect>
+  <text x="222" y="96" fill="#B54708">$0.05 – $0.50</text>
+  <text x="0" y="150" font-weight="400" fill="#475467" font-size="12">Estimated earnings per 1,000 qualified views. Based on creator reports, not official Meta numbers.</text></g>
+ </svg>
+ <h3>🏆 Top 10 niches for faceless pages</h3>
+ <table>
+  <tbody><tr><th>Niche</th><th>Est. per 1,000 views (US)</th><th>Best format</th></tr>
+  <tr><td>💰 Personal finance &amp; investing</td><td><b>$4 – $12</b></td><td>60–90s Reels, chart posts</td></tr>
+  <tr><td>🤖 AI &amp; tech tools</td><td><b>$3 – $10</b></td><td>Screen-record Reels, 3–5 min demos</td></tr>
+  <tr><td>📈 Business success stories</td><td><b>$3 – $9</b></td><td>2–4 min story videos</td></tr>
+  <tr><td>🏰 Luxury homes &amp; architecture</td><td><b>$3 – $8</b></td><td>30–45s Reels, photo posts</td></tr>
+  <tr><td>🧬 Health science facts</td><td><b>$2 – $8</b></td><td>60s explainer Reels</td></tr>
+  <tr><td>🏛️ History &amp; mysteries</td><td><b>$2 – $7</b></td><td>3–8 min story videos</td></tr>
+  <tr><td>🧘 Stoicism &amp; self-improvement</td><td><b>$2 – $6</b></td><td>Quote Reels, quote photos</td></tr>
+  <tr><td>🚀 Space &amp; science</td><td><b>$2 – $6</b></td><td>60s Reels with NASA images</td></tr>
+  <tr><td>🦁 Wildlife &amp; nature facts</td><td><b>$1.5 – $5</b></td><td>30–60s Reels</td></tr>
+  <tr><td>🏠 Home, DIY &amp; cleaning hacks</td><td><b>$1.5 – $5</b></td><td>30s step-by-step Reels</td></tr>
+ </tbody></table>
+ <div class="card orange"><b>Rule:</b> One niche per page. Mixed topics confuse Facebook and your audience.</div>
+ <div class="foot"><span>Chapter 2 · Niches</span><span>Page 6</span></div>
+</section>
+
+<section class="page">
+ <span class="tag">Reach the USA from India</span>
+ <h2>4 Safe Ways to Get <span class="grad">US Viewers</span></h2>
+ <p class="lead">You live in India, but your viewers can be in America. Here's how.</p>
+ <h3>1️⃣ Post on US time</h3>
+ <table>
+  <tbody><tr><th>US time (Eastern)</th><th>India time (Mar–Nov)</th><th>India time (Nov–Mar)</th><th>Why</th></tr>
+  <tr><td>☀️ 7–9 AM</td><td>4:30–6:30 PM</td><td>5:30–7:30 PM</td><td>Morning phone check</td></tr>
+  <tr><td>🍔 12–1 PM</td><td>9:30–10:30 PM</td><td>10:30–11:30 PM</td><td>Lunch break scroll</td></tr>
+  <tr><td>🌙 7–10 PM</td><td>4:30–7:30 AM</td><td>5:30–8:30 AM</td><td>Evening relax time</td></tr>
+ </tbody></table>
+ <p>👉 Don't wake up at 5 AM. Use the <b>scheduler</b> in Meta Business Suite.</p>
+ <div class="grid2">
+  <div class="card blue"><h3 style="margin-top:0">2️⃣ Write like an American</h3><p>Use US spelling (color, not colour), dollars ($), miles, °F and US examples. Keep captions, on-screen text and voice in English.</p></div>
+  <div class="card purple"><h3 style="margin-top:0">3️⃣ Pick US topics</h3><p>Open <b>Google Trends</b>, set it to <b>United States</b>. A video on US home prices brings US viewers. A video on Indian mutual funds brings Indian viewers.</p></div>
+  <div class="card green"><h3 style="margin-top:0">4️⃣ Get US followers first</h3><p>Facebook first shows your post to your followers and similar people. If your early followers are American, every new post leans American.</p></div>
+  <div class="card red"><h3 style="margin-top:0">🚫 Don't use a VPN</h3><p>Fake locations can trigger security checks and don't change who watches.</p></div>
+ </div>
+ <h3>📍 Weekly audience check</h3>
+ <ol class="steps">
+  <li>Go to <b>Professional Dashboard → Insights → Audience → Top countries</b>.</li>
+  <li>Target: <b>60%+</b> viewers from US, UK, Canada and Australia by Day 30.</li>
+  <li>If India is above 40%, check your last 10 posts: topic, examples and posting time.</li>
+ </ol>
+ <div class="foot"><span>Chapter 2 · US audience</span><span>Page 7</span></div>
+</section>
+
+<!-- CH3 -->
+<section class="page" id="ch3">
+ <div class="chap"><div><span style="font-size:12px;letter-spacing:2px;opacity:.85">CHAPTER</span><h2>The Faceless AI Video Machine</h2></div><div class="num">03</div></div>
+ <p class="lead">Make one 45–60 second Reel in <b>15–25 minutes</b>. Make 5 at once and it gets close to 10 minutes each.</p>
+ <svg viewBox="0 0 600 130" style="width:100%">
+  <g font-family="Segoe UI,Arial" text-anchor="middle">
+  <path d="M60 50 H540" stroke="#d0d5dd" stroke-width="4" stroke-dasharray="6 6"></path>
+  <circle cx="60" cy="50" r="36" fill="#1877F2"></circle><text x="60" y="60" font-size="28">✍️</text><text x="60" y="110" font-size="13" font-weight="800">1. Script</text>
+  <circle cx="180" cy="50" r="36" fill="#4F5BF2"></circle><text x="180" y="60" font-size="28">🎙️</text><text x="180" y="110" font-size="13" font-weight="800">2. AI Voice</text>
+  <circle cx="300" cy="50" r="36" fill="#7B2FF7"></circle><text x="300" y="60" font-size="28">🖼️</text><text x="300" y="110" font-size="13" font-weight="800">3. Visuals</text>
+  <circle cx="420" cy="50" r="36" fill="#F79009"></circle><text x="420" y="60" font-size="28">✂️</text><text x="420" y="110" font-size="13" font-weight="800">4. Edit</text>
+  <circle cx="540" cy="50" r="36" fill="#12B76A"></circle><text x="540" y="60" font-size="28">🏷️</text><text x="540" y="110" font-size="13" font-weight="800">5. Label &amp; post</text></g>
+ </svg>
+ <h3>✍️ Step 1: Write a script people watch till the end</h3>
+ <div class="grid5">
+  <div class="card blue" style="text-align:center"><b>Hook</b><p>First 2 sec. Make them curious.</p></div>
+  <div class="card purple" style="text-align:center"><b>Promise</b><p>Say what they'll get at the end.</p></div>
+  <div class="card orange" style="text-align:center"><b>3–5 points</b><p>A surprise every 8–10 sec.</p></div>
+  <div class="card green" style="text-align:center"><b>Payoff</b><p>Deliver the promise.</p></div>
+  <div class="card" style="text-align:center"><b>Question</b><p>A real question to answer.</p></div>
+ </div>
+ <p><b>📋 Copy this prompt</b> into ChatGPT, Claude or Gemini:</p>
+ <div class="prompt"><button class="copy">Copy</button>You are a scriptwriter for a faceless Facebook Reels page in the [NICHE] niche.
+Audience: adults in the United States, watching on mobile.
+
+Write a [45/60/90]-second voiceover script about: [TOPIC].
+
+Rules:
+- Line 1: a hook under 12 words that creates curiosity.
+- Line 2: promise a clear payoff that comes at the end.
+- 3-5 short points. Add a surprise every 8-10 seconds.
+- Use American English, US examples, dollars and miles.
+- Facts must be correct. Mark anything unsure with [VERIFY].
+- End with the payoff, then one real question viewers can
+  answer from their own life. No "comment YES" lines.
+- Output 3 columns: VOICEOVER | ON-SCREEN TEXT (max 6 words) | VISUAL IDEA
+- Give 3 extra hook options at the end.</div>
+ <div class="card orange"><b>Always check [VERIFY] lines.</b> Wrong facts can get your post labeled as false, which cuts views and money.</div>
+ <div class="foot"><span>Chapter 3 · AI videos</span><span>Page 8</span></div>
+</section>
+
+<section class="page">
+ <h3 style="margin-top:0">🎙️ Step 2: Make a real-sounding AI voice</h3>
+ <p>Use <b>ElevenLabs</b> (or a similar tool) on a <b>paid plan</b> so you are allowed to use it for money.</p>
+ <div class="grid2">
+  <div>
+   <p><b>Stability</b> · 40–50%</p><div class="slider"><i style="left:40%;width:10%"></i></div>
+   <p><b>Similarity / clarity</b> · 75%</p><div class="slider"><i style="left:0;width:75%"></i></div>
+   <p><b>Style</b> · 0–15%</p><div class="slider"><i style="left:0;width:15%"></i></div>
+   <p><b>Speed</b> · 1.05x–1.10x</p><div class="slider"><i style="left:52%;width:6%"></i></div>
+   <p><b>Speaker boost</b> · ON ✅</p>
+  </div>
+  <div>
+   <div class="card blue"><b>Sounds like a robot?</b><p>Lower Stability a little.</p></div>
+   <div class="card orange"><b>Voice shaky?</b><p>Raise Stability.</p></div>
+   <div class="card purple"><b>People leave early?</b><p>Try speed 1.10x.</p></div>
+   <div class="card red"><b>Never</b><p>copy a real person's voice without written permission.</p></div>
+  </div>
+ </div>
+ <p>💡 Use the <b>same voice in every video</b>. It becomes your brand.</p>
+ <h3>🖼️ Step 3: Get visuals you are allowed to use</h3>
+ <div class="grid2">
+  <div class="card purple"><b>🤖 AI images</b><p>Midjourney (paid plan for business use), Flux, Ideogram. Check each tool's rules.</p></div>
+  <div class="card blue"><b>🎞️ AI motion</b><p>Turn still images into 3–5 second moving shots with image-to-video tools.</p></div>
+  <div class="card green"><b>🆓 Free stock</b><p>Pexels, Pixabay (free for business). Paid: Storyblocks, Envato.</p></div>
+  <div class="card orange"><b>🚀 Public images</b><p>NASA and US government images are usually free to use. Check each one.</p></div>
+ </div>
+ <div class="grid2" style="align-items:center">
+  <svg viewBox="0 0 260 170" style="width:100%">
+   <rect x="20" y="10" width="85" height="150" rx="10" fill="#EAF2FF" stroke="#1877F2" stroke-width="3"></rect><text x="62" y="90" text-anchor="middle" font-weight="800" fill="#1877F2" font-family="Arial">9:16</text><text x="62" y="108" text-anchor="middle" font-size="11" fill="#475467" font-family="Arial">Reels, Stories</text>
+   <rect x="140" y="35" width="100" height="125" rx="10" fill="#F3ECFF" stroke="#7B2FF7" stroke-width="3"></rect><text x="190" y="100" text-anchor="middle" font-weight="800" fill="#7B2FF7" font-family="Arial">4:5</text><text x="190" y="118" text-anchor="middle" font-size="11" fill="#475467" font-family="Arial">Photo posts</text>
+  </svg>
+  <div><p><b>Keep the main subject in the centre</b> so captions and Facebook buttons don't cover it.</p><p><b>Image prompt:</b></p><div class="prompt" style="font-size:11px">[SUBJECT], [ACTION], cinematic lighting, shallow depth of field, high detail, [MOOD] colors, vertical, subject centered --ar 9:16</div></div>
+ </div>
+ <div class="foot"><span>Chapter 3 · Voice &amp; visuals</span><span>Page 9</span></div>
+</section>
+
+<section class="page">
+ <h3 style="margin-top:0">✂️ Step 4: Edit like a pro</h3>
+ <div class="card red"><b>📵 CapCut is blocked in India.</b> Use <b>VN Video Editor</b>, <b>Canva</b>, <b>DaVinci Resolve</b> (free) or <b>Premiere Pro</b>.</div>
+ <svg viewBox="0 0 600 120" style="width:100%">
+  <g font-family="Segoe UI,Arial" font-size="11" font-weight="700">
+  <text x="0" y="22" fill="#475467">VOICE</text><rect x="60" y="10" width="530" height="18" rx="5" fill="#1877F2"></rect>
+  <text x="0" y="52" fill="#475467">CLIPS</text>
+  <rect x="60" y="40" width="60" height="18" rx="4" fill="#7B2FF7"></rect><rect x="123" y="40" width="55" height="18" rx="4" fill="#9E77ED"></rect><rect x="181" y="40" width="65" height="18" rx="4" fill="#7B2FF7"></rect><rect x="249" y="40" width="50" height="18" rx="4" fill="#9E77ED"></rect><rect x="302" y="40" width="62" height="18" rx="4" fill="#7B2FF7"></rect><rect x="367" y="40" width="58" height="18" rx="4" fill="#9E77ED"></rect><rect x="428" y="40" width="60" height="18" rx="4" fill="#7B2FF7"></rect><rect x="491" y="40" width="99" height="18" rx="4" fill="#9E77ED"></rect>
+  <text x="0" y="82" fill="#475467">TEXT</text>
+  <rect x="60" y="70" width="90" height="18" rx="4" fill="#FDB022"></rect><rect x="160" y="70" width="80" height="18" rx="4" fill="#FDB022"></rect><rect x="250" y="70" width="95" height="18" rx="4" fill="#FDB022"></rect><rect x="355" y="70" width="85" height="18" rx="4" fill="#FDB022"></rect><rect x="450" y="70" width="140" height="18" rx="4" fill="#FDB022"></rect>
+  <text x="0" y="112" fill="#475467">SFX</text>
+  <circle cx="123" cy="104" r="6" fill="#12B76A"></circle><circle cx="181" cy="104" r="6" fill="#12B76A"></circle><circle cx="249" cy="104" r="6" fill="#12B76A"></circle><circle cx="302" cy="104" r="6" fill="#12B76A"></circle><circle cx="367" cy="104" r="6" fill="#12B76A"></circle><circle cx="428" cy="104" r="6" fill="#12B76A"></circle><circle cx="491" cy="104" r="6" fill="#12B76A"></circle></g>
+ </svg>
+ <ol class="steps">
+  <li>Put the voice first. <b>Cut every silence</b> longer than a third of a second.</li>
+  <li><b>Change the picture every 2–3 seconds:</b> new clip, small zoom-in (105–110%), or a slow pan.</li>
+  <li><b>Big captions,</b> 2–4 words at a time, white text with black outline, key word in <span style="background:var(--y);padding:0 4px;border-radius:4px">yellow</span>.</li>
+  <li>Add a soft <b>"whoosh"</b> on cuts and a rising sound before the big reveal.</li>
+  <li>Music only from <b>Meta Sound Collection</b> or a licensed library. Keep it quiet (10–15%).</li>
+  <li>Export at <b>1080 × 1920, 30 fps</b>.</li>
+ </ol>
+ <h3>🏷️ Step 5: Use the AI label</h3>
+ <div class="card blue"><p>If your AI video or voice <b>looks or sounds real</b>, turn on the <b>AI label</b> when posting. This keeps your page safe. The label alone does not reduce your earnings.</p></div>
+ <h3>🛠️ Quick fixes</h3>
+ <table>
+  <tbody><tr><th>Problem</th><th>Fix</th></tr>
+  <tr><td>People leave in first 3 seconds</td><td>Rewrite the hook. Show your best visual first.</td></tr>
+  <tr><td>People leave in the middle</td><td>Add a surprise or cut 10–15% of the script.</td></tr>
+  <tr><td>"Unoriginal" warning</td><td>See Chapter 5. Add more of your own ideas and edits.</td></tr>
+  <tr><td>Voice sounds fake</td><td>Lower Stability. Add commas for natural pauses.</td></tr>
+  <tr><td>Too many Indian viewers</td><td>Check topic and posting time (Chapter 2).</td></tr>
+ </tbody></table>
+ <div class="foot"><span>Chapter 3 · Editing</span><span>Page 10</span></div>
+</section>
+
+<!-- CH4 -->
+<section class="page" id="ch4">
+ <div class="chap"><div><span style="font-size:12px;letter-spacing:2px;opacity:.85">CHAPTER</span><h2>Get More Views the Right Way</h2></div><div class="num">04</div></div>
+ <p class="lead">Big reach comes from <b>real people</b> watching, sharing and commenting. Fake shortcuts get pages punished.</p>
+ <div class="card red"><b>🚫 Don't do this:</b> sharing through fake or extra accounts, posting the same link in dozens of groups, or "comment pods". Facebook treats this as spam. Pages lose reach, lose money or get removed.</div>
+ <h3>✅ The safe way to spread your content</h3>
+ <div class="grid2">
+  <div class="card blue"><div class="ico">👥</div><b>Start your own Group</b><p>Make a Facebook Group for your niche and link it to your Page. Post a daily question. Share your best Reel there once.</p></div>
+  <div class="card purple"><div class="ico">🤝</div><b>Join 5–10 niche groups</b><p>Pick active groups that allow sharing. Help people for a week first. Then share only matching posts, max once a week per group.</p></div>
+  <div class="card green"><div class="ico">🔗</div><b>Team up with pages</b><p>Find 3–5 similar-size pages. Share each other's posts or make posts together.</p></div>
+  <div class="card orange"><div class="ico">📲</div><b>Post everywhere at once</b><p>Post the same Reel to Facebook and Instagram from Meta Business Suite. Share it to your Story.</p></div>
+ </div>
+ <div class="card"><b>♻️ Reuse winners:</b> When a Reel does well, make a longer video, a photo post and a text post from it.</div>
+ <h3>⏰ The first 60 minutes after posting</h3>
+ <svg viewBox="0 0 600 110" style="width:100%">
+  <g font-family="Segoe UI,Arial" font-size="12" text-anchor="middle" font-weight="700">
+  <rect x="10" y="40" width="580" height="8" rx="4" fill="#e4e7ec"></rect>
+  <circle cx="40" cy="44" r="16" fill="#1877F2"></circle><text x="40" y="49" fill="#fff">0</text><text x="40" y="85">Post at US</text><text x="40" y="100">peak time</text>
+  <circle cx="170" cy="44" r="16" fill="#4F5BF2"></circle><text x="170" y="49" fill="#fff">1</text><text x="170" y="85">Pin a comment</text><text x="170" y="100">with a question</text>
+  <circle cx="300" cy="44" r="16" fill="#7B2FF7"></circle><text x="300" y="49" fill="#fff">5</text><text x="300" y="85">Share to Story</text><text x="300" y="100">and your Group</text>
+  <circle cx="430" cy="44" r="16" fill="#F79009"></circle><text x="430" y="49" fill="#fff">60</text><text x="430" y="85">Reply to every</text><text x="430" y="100">comment</text>
+  <circle cx="560" cy="44" r="16" fill="#F04438"></circle><text x="560" y="49" fill="#fff">✕</text><text x="560" y="85">Don't edit or</text><text x="560" y="100">re-post</text>
+  <text x="300" y="20" fill="#475467" font-weight="400">minutes after posting →</text></g>
+ </svg>
+ <div class="foot"><span>Chapter 4 · Views</span><span>Page 11</span></div>
+</section>
+
+<section class="page">
+ <h2>What Facebook <span class="grad">Rewards vs Punishes</span></h2>
+ <div class="vs" style="margin-top:10px">
+  <div class="col" style="background:#E7F8EF"><b style="color:var(--g);font-size:16px">👍 REWARDED</b>
+   <ul style="margin-left:18px"><li><b>Watching till the end</b> – the strongest signal</li><li><b>Shares</b> to messages and Stories</li><li><b>Real comments</b> and conversations</li><li><b>New follows</b> from a post</li><li>Series like "Part 1 of 5"</li></ul></div>
+  <div class="col" style="background:#FEECEB"><b style="color:var(--r);font-size:16px">👎 PUNISHED</b>
+   <ul style="margin-left:18px"><li>Misleading or fake hooks</li><li>"Comment YES" / "tag 3 friends" bait</li><li>Reposted or copied videos</li><li>Spam sharing and fake accounts</li><li>People hiding your posts</li></ul></div>
+ </div>
+ <h3>📏 Realistic growth (so you don't give up)</h3>
+ <p>No method can promise 1 million views in 24 hours. Here is what normal growth looks like:</p>
+ <svg viewBox="0 0 600 200" style="width:100%">
+  <g font-family="Segoe UI,Arial" font-size="12">
+  <line x1="50" y1="170" x2="580" y2="170" stroke="#98A2B3"></line><line x1="50" y1="20" x2="50" y2="170" stroke="#98A2B3"></line>
+  <path d="M50 165 C150 160 200 150 260 130 S420 60 580 25" fill="none" stroke="url(#g1)" stroke-width="5"></path>
+  <circle cx="150" cy="160" r="7" fill="#1877F2"></circle><circle cx="330" cy="105" r="7" fill="#7B2FF7"></circle><circle cx="560" cy="30" r="7" fill="#12B76A"></circle>
+  <text x="95" y="145" font-weight="700">Months 1–2</text><text x="80" y="190" fill="#475467">1K–20K views per Reel</text>
+  <text x="290" y="88" font-weight="700">Months 3–6</text><text x="270" y="190" fill="#475467">weekly 100K+ breakouts</text>
+  <text x="470" y="55" font-weight="700">6+ months</text><text x="470" y="190" fill="#475467">steady income</text></g>
+ </svg>
+ <div class="card purple"><b>🎯 Scale signal:</b> If over <b>60%</b> of viewers stay past 3 seconds and the average viewer watches over <b>half</b> the video, make 3 more versions of that Reel.</div>
+ <h3>✅ Chapter 4 checklist</h3>
+ <ul class="check">
+  <li><span class="bx"></span>I created my own niche Group and linked it to my Page.</li>
+  <li><span class="bx"></span>I joined 5–10 active groups and read their rules.</li>
+  <li><span class="bx"></span>I reply to every comment in the first hour.</li>
+  <li><span class="bx"></span>I never use fake accounts or spam sharing.</li>
+ </ul>
+ <div class="foot"><span>Chapter 4 · Views</span><span>Page 12</span></div>
+</section>
+
+<!-- CH5 -->
+<section class="page" id="ch5">
+ <div class="chap"><div><span style="font-size:12px;letter-spacing:2px;opacity:.85">CHAPTER</span><h2>Original Content Rules</h2></div><div class="num">05</div></div>
+ <p class="lead">In 2026 Facebook gives <b>more reach and money to original content</b> and less to copied content. Views on original Reels roughly doubled in late 2025.</p>
+ <div class="vs">
+  <div class="col" style="background:#E7F8EF"><b style="color:var(--g);font-size:15px">✅ ORIGINAL</b>
+   <ul style="margin-left:18px"><li>Videos you made with your own script, AI voice and visuals</li><li>Remixes where you add new facts or real analysis</li><li>Licensed stock clips arranged into your own story</li></ul></div>
+  <div class="col" style="background:#FEECEB"><b style="color:var(--r);font-size:15px">❌ NOT ORIGINAL</b>
+   <ul style="margin-left:18px"><li>Re-uploading other people's videos</li><li>Adding borders, captions or speed changes to someone else's video</li><li>Joining other people's clips or just reacting</li></ul></div>
+ </div>
+ <div class="card orange"><b>⚠️ Watch out:</b> Many online tips say "add a border, flip it, speed it up". Facebook now names exactly these tricks as <b>unoriginal</b>.</div>
+ <h3>🔍 How Facebook spots copied videos</h3>
+ <p>Facebook's Rights Manager compares every upload with videos and music owned by others. If it finds a match, it can block the video, mute it, send your earnings to the owner, or give your page a strike. <b>The best protection is simple: make content with nothing to match.</b></p>
+ <h3>✅ Check this before every upload</h3>
+ <ul class="check">
+  <li><span class="bx"></span><b>I wrote the script</b> (AI help is fine, copying a video is not).</li>
+  <li><span class="bx"></span><b>I own or license every picture and clip</b>, and I noted the source.</li>
+  <li><span class="bx"></span><b>My voice and music are allowed</b> for commercial use.</li>
+  <li><span class="bx"></span><b>Any outside clip is short</b> (under 20% of the video) and I add something new.</li>
+  <li><span class="bx"></span><b>No watermark</b> from TikTok or other apps.</li>
+  <li><span class="bx"></span><b>AI label is on</b> where the video looks real.</li>
+ </ul>
+ <p class="note">"Fair use" is a narrow US law decided case by case. It is not a free pass. If unsure, don't use the clip.</p>
+ <div class="foot"><span>Chapter 5 · Original content</span><span>Page 13</span></div>
+</section>
+
+<section class="page">
+ <h2>Got a <span class="grad">Warning?</span> Do This.</h2>
+ <p class="lead">Stay calm. Most warnings can be fixed.</p>
+ <ol class="steps">
+  <li><b>Read the notice.</b> Go to Professional Dashboard → Monetization Status. It shows the post and the rule.</li>
+  <li><b>Find the type.</b> Copyright claim? Unoriginal content? Community rule?</li>
+  <li><b>If you made it or have a license:</b> appeal and attach proof (project files, license receipt, AI history).</li>
+  <li><b>If you don't have rights:</b> delete it, plus any other posts made the same way.</li>
+  <li><b>Reset:</b> post only clearly original content for 7–14 days before trying that style again.</li>
+ </ol>
+ <table>
+  <tbody><tr><th>Type of problem</th><th>What to do</th></tr>
+  <tr><td>©️ Copyright claim</td><td>Licensed? Dispute with proof. Not licensed? Remove the post.</td></tr>
+  <tr><td>🔁 Unoriginal content</td><td>Appeal if you made it; explain what you created.</td></tr>
+  <tr><td>📜 Community Standards</td><td>Read the exact rule before appealing.</td></tr>
+ </tbody></table>
+ <div class="card green"><b>🛡️ Protect your own videos:</b> Once you have good originals, apply for Meta's <b>content protection</b> tool in your dashboard. It finds copies of your Reels and lets you take action.</div>
+ <svg viewBox="0 0 600 140" style="width:100%">
+  <g font-family="Segoe UI,Arial" font-size="13" font-weight="800" text-anchor="middle">
+  <rect x="20" y="30" width="160" height="80" rx="16" fill="#FEECEB" stroke="#F04438" stroke-width="2"></rect><text x="100" y="65" fill="#F04438">⚠️ Warning</text><text x="100" y="88" fill="#475467" font-weight="400" font-size="12">read &amp; classify</text>
+  <path d="M180 70 H215" stroke="#98A2B3" stroke-width="3"></path><polygon points="215,63 228,70 215,77" fill="#98A2B3"></polygon>
+  <rect x="230" y="30" width="160" height="80" rx="16" fill="#FFF4E5" stroke="#F79009" stroke-width="2"></rect><text x="310" y="65" fill="#B54708">🔧 Fix</text><text x="310" y="88" fill="#475467" font-weight="400" font-size="12">appeal or remove</text>
+  <path d="M390 70 H425" stroke="#98A2B3" stroke-width="3"></path><polygon points="425,63 438,70 425,77" fill="#98A2B3"></polygon>
+  <rect x="440" y="30" width="140" height="80" rx="16" fill="#E7F8EF" stroke="#12B76A" stroke-width="2"></rect><text x="510" y="65" fill="#067647">✅ Green</text><text x="510" y="88" fill="#475467" font-weight="400" font-size="12">7–14 days clean</text></g>
+ </svg>
+ <div class="foot"><span>Chapter 5 · Warnings</span><span>Page 14</span></div>
+</section>
+
+<!-- CH6 -->
+<section class="page" id="ch6">
+ <div class="chap"><div><span style="font-size:12px;letter-spacing:2px;opacity:.85">CHAPTER</span><h2>Get Paid in India</h2></div><div class="num">06</div></div>
+ <p class="lead">Set up payouts <b>the day your invite arrives</b>. Facebook pays nothing until your bank and tax details are done.</p>
+ <h3>🏦 Step 1: Create your payout account</h3>
+ <ol class="steps">
+  <li>Go to <b>Professional Dashboard → Monetization → Payouts</b>.</li>
+  <li>Choose <b>Individual</b> (unless you own a registered company).</li>
+  <li>Type your name <b>exactly as on your PAN and bank account</b>. One wrong letter = failed payment.</li>
+  <li>Add your home address in India.</li>
+ </ol>
+ <h3>💳 Step 2: Bank details</h3>
+ <div class="grid2">
+  <div class="card blue"><b>Use a bank that accepts foreign money</b><p>SBI, HDFC, ICICI, Axis, Kotak and most big banks do. Account must be in your own name.</p></div>
+  <div class="card purple"><b>SWIFT vs IFSC</b><p>IFSC works only inside India. For money from abroad, banks use a <b>SWIFT code</b>. Ask your bank for the right one. Fill exactly what Facebook's form asks.</p></div>
+ </div>
+ <h3>📅 Step 3: When does money come?</h3>
+ <svg viewBox="0 0 600 150" style="width:100%">
+  <g font-family="Segoe UI,Arial" font-size="12" font-weight="700" text-anchor="middle">
+  <rect x="20" y="20" width="250" height="110" rx="14" fill="#EAF2FF"></rect><text x="145" y="45" fill="#1877F2">MONTH 1</text><text x="145" y="80" font-size="30">🎬📈</text><text x="145" y="112" fill="#475467" font-weight="400">You post and earn</text>
+  <path d="M275 75 H315" stroke="#12B76A" stroke-width="4"></path><polygon points="315,66 330,75 315,84" fill="#12B76A"></polygon>
+  <rect x="335" y="20" width="245" height="110" rx="14" fill="#E7F8EF"></rect><text x="457" y="45" fill="#067647">MONTH 2</text>
+  <rect x="425" y="55" width="64" height="50" rx="10" fill="#12B76A"></rect><text x="457" y="88" fill="#fff" font-size="22">21</text>
+  <text x="457" y="122" fill="#475467" font-weight="400">Payout around the 21st</text></g>
+ </svg>
+ <table>
+  <tbody><tr><th>Item</th><th>Detail</th></tr>
+  <tr><td>Minimum payout</td><td><b>$100</b> outside the US. Smaller amounts roll over to next month.</td></tr>
+  <tr><td>Currency</td><td>Sent in US dollars. Your bank converts to rupees.</td></tr>
+  <tr><td>Proof</td><td>Keep the bank's foreign remittance advice (FIRC) for every payment.</td></tr>
+ </tbody></table>
+ <div class="foot"><span>Chapter 6 · Payouts</span><span>Page 15</span></div>
+</section>
+
+<section class="page">
+ <h2>The US Tax Form <span class="grad">(W-8BEN)</span> Made Simple</h2>
+ <p class="lead">Meta is a US company, so it needs this form. Without it, <b>up to 30%</b> can be cut from US-sourced income.</p>
+ <div style="border:2px solid var(--d);border-radius:14px;padding:14px;background:#FCFCFD">
+  <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--d);padding-bottom:6px;margin-bottom:8px"><b>Form W-8BEN</b><span class="note">Example of what to fill</span></div>
+  <table style="margin:0">
+   <tbody><tr><th>Field</th><th>What you enter</th></tr>
+   <tr><td>Name</td><td>Your name exactly as on PAN</td></tr>
+   <tr><td>Country of citizenship</td><td>India</td></tr>
+   <tr><td>Permanent address</td><td>Your home address in India (not a PO box)</td></tr>
+   <tr><td>US tax number</td><td>Leave blank</td></tr>
+   <tr><td>Foreign tax number</td><td>Your <b>PAN</b></td></tr>
+   <tr><td>Date of birth</td><td>As on PAN</td></tr>
+   <tr><td>Tax treaty</td><td>Resident of <b>India</b> – follow the form's steps</td></tr>
+   <tr><td>Sign</td><td>Sign online. You confirm you are not a US person.</td></tr>
+  </tbody></table>
+ </div>
+ <div class="card green"><b>Good to know:</b> Many Indian creators who work fully from India see little or no US tax cut. But it depends on how Meta classifies each payment, so check every payout statement. The form is usually valid for 3 years.</div>
+ <h3>🇮🇳 Taxes in India</h3>
+ <div class="grid2">
+  <div class="card blue"><b>📄 Income tax</b><p>Facebook income is taxable in India as business or professional income. Track income and costs, and file your ITR.</p></div>
+  <div class="card purple"><b>🧾 GST</b><p>Needed once yearly turnover crosses about <b>₹20 lakh</b>. Foreign income is usually "export of services" – ask about an <b>LUT</b>.</p></div>
+  <div class="card orange"><b>📆 Advance tax</b><p>If your yearly tax is over <b>₹10,000</b>, pay it in quarterly parts.</p></div>
+  <div class="card green"><b>🗂️ Records</b><p>Keep payout statements, bank papers and your W-8BEN copy safely.</p></div>
+ </div>
+ <p class="note">This is general information, not tax advice. Talk to a Chartered Accountant (CA).</p>
+ <div class="foot"><span>Chapter 6 · Tax</span><span>Page 16</span></div>
+</section>
+
+<section class="page">
+ <h2>Payout <span class="grad">Problem Solver</span></h2>
+ <table>
+  <tbody><tr><th>What you see</th><th>Why</th><th>Fix</th></tr>
+  <tr><td>⏸️ Payout "on hold"</td><td>Tax form missing or expired</td><td>Fill or renew W-8BEN</td></tr>
+  <tr><td>↩️ Payment failed</td><td>Name mismatch or wrong bank/SWIFT details</td><td>Correct details, wait for next cycle</td></tr>
+  <tr><td>💤 Earnings shown, no money</td><td>Balance under $100</td><td>It rolls over automatically</td></tr>
+  <tr><td>✂️ Tax cut you didn't expect</td><td>Treaty part of W-8BEN</td><td>Check it with a CA</td></tr>
+  <tr><td>🏦 Bank asks for papers</td><td>Foreign money rules</td><td>Give the purpose code for "export of services"</td></tr>
+ </tbody></table>
+ <h3>✅ Chapter 6 checklist</h3>
+ <ul class="check">
+  <li><span class="bx"></span>My payout name matches my PAN and bank account exactly.</li>
+  <li><span class="bx"></span>I got the correct SWIFT code from my bank.</li>
+  <li><span class="bx"></span>I filled W-8BEN with my PAN.</li>
+  <li><span class="bx"></span>I talked to a CA about income tax and GST.</li>
+  <li><span class="bx"></span>I save every payout statement and FIRC.</li>
+ </ul>
+ <div class="card blue" style="margin-top:14px;text-align:center"><div class="ico">🎉</div><b style="font-size:16px">You now know the full money path:</b><p>Original content → real views → invite → payout setup → money in your Indian bank.</p></div>
+ <div class="foot"><span>Chapter 6 · Fixes</span><span>Page 17</span></div>
+</section>
+
+<!-- CH7 -->
+<section class="page" id="ch7">
+ <div class="chap"><div><span style="font-size:12px;letter-spacing:2px;opacity:.85">CHAPTER</span><h2>50 Hooks That Stop the Scroll</h2></div><div class="num">07</div></div>
+ <p class="lead">Change the words in [brackets] for your niche. <b>Only use a hook your video truly delivers</b> – fake hooks make people hide your posts.</p>
+ <div class="grid2">
+  <div>
+   <h3 style="margin-top:0">🤔 Curiosity</h3>
+   <div class="hook"><b>1.</b> Nobody talks about why [thing] really happened.</div>
+   <div class="hook"><b>2.</b> This [object] was hiding in plain sight for [number] years.</div>
+   <div class="hook"><b>3.</b> There's a reason [big company] never [does X].</div>
+   <div class="hook"><b>4.</b> I found out what really happens when you [action].</div>
+   <div class="hook"><b>5.</b> The strangest [niche] fact I've ever learned.</div>
+   <div class="hook"><b>6.</b> Look closely at [detail]. Now you can't unsee it.</div>
+   <div class="hook"><b>7.</b> What [group] knows about [topic] that you don't.</div>
+   <div class="hook"><b>8.</b> This took [number] years to figure out.</div>
+   <div class="hook"><b>9.</b> The real story behind [familiar thing] is wild.</div>
+   <div class="hook"><b>10.</b> Here's what [thing] looks like from the inside.</div>
+  </div>
+  <div>
+   <h3 style="margin-top:0">⚠️ Warning</h3>
+   <div class="hook"><b>11.</b> Stop [common habit] until you see this.</div>
+   <div class="hook"><b>12.</b> If you [do X], you're losing money every month.</div>
+   <div class="hook"><b>13.</b> The [niche] mistake almost everyone makes.</div>
+   <div class="hook"><b>14.</b> Don't sign [document] before checking this line.</div>
+   <div class="hook"><b>15.</b> This is why your [thing] keeps [failing].</div>
+   <div class="hook"><b>16.</b> [Number] signs your [thing] is about to [break].</div>
+   <div class="hook"><b>17.</b> Banks hope you never notice this fee.</div>
+   <div class="hook"><b>18.</b> This phone setting is costing you [result].</div>
+   <div class="hook"><b>19.</b> The [product] trick that quietly backfires.</div>
+   <div class="hook"><b>20.</b> Before you buy [item], know this.</div>
+  </div>
+ </div>
+ <h3>🔄 Contrarian</h3>
+ <div class="grid2">
+  <div><div class="hook"><b>21.</b> [Popular advice] is wrong. Here's why.</div><div class="hook"><b>22.</b> Unpopular opinion: [belief] is overrated.</div><div class="hook"><b>23.</b> Rich people I studied do the opposite of [habit].</div><div class="hook"><b>24.</b> Everyone copies [strategy]. Smart ones skip it.</div><div class="hook"><b>25.</b> You don't need [expensive thing] to [result].</div></div>
+  <div><div class="hook"><b>26.</b> [Famous idea] sounds smart until you do the math.</div><div class="hook"><b>27.</b> Working harder isn't why [group] gets ahead.</div><div class="hook"><b>28.</b> The "safe" choice is often the risky one.</div><div class="hook"><b>29.</b> Most [niche] experts won't say this out loud.</div><div class="hook"><b>30.</b> Forget [trend]. This is what works now.</div></div>
+ </div>
+ <div class="foot"><span>Chapter 7 · Hooks</span><span>Page 18</span></div>
+</section>
+
+<section class="page">
+ <div class="grid2">
+  <div>
+   <h3 style="margin-top:0">💵 Money proof</h3>
+   <div class="hook"><b>31.</b> $[amount] a month to $[amount]: here's what changed.</div>
+   <div class="hook"><b>32.</b> How a [age]-year-old turned $[amount] into $[amount].</div>
+   <div class="hook"><b>33.</b> What $[amount] buys in [city] vs [city].</div>
+   <div class="hook"><b>34.</b> The math behind a $[price] [house/car/watch].</div>
+   <div class="hook"><b>35.</b> Here's what [job] really earns in the US.</div>
+   <div class="hook"><b>36.</b> One decision worth $[amount] over 20 years.</div>
+   <div class="hook"><b>37.</b> This company makes $[amount] a day from [simple thing].</div>
+   <div class="hook"><b>38.</b> The cheapest [item] that's actually worth it.</div>
+   <div class="hook"><b>39.</b> I compared [number] [products] so you don't have to.</div>
+   <div class="hook"><b>40.</b> Inside a $[amount] home, room by room.</div>
+  </div>
+  <div>
+   <h3 style="margin-top:0">⏳ Urgency (real deadlines only)</h3>
+   <div class="hook"><b>41.</b> This changes on [date]. Here's what to do now.</div>
+   <div class="hook"><b>42.</b> You have until [deadline] to [action].</div>
+   <div class="hook"><b>43.</b> Watch this before your next [purchase/trip/bill].</div>
+   <div class="hook"><b>44.</b> If you live in the US, check this today.</div>
+   <div class="hook"><b>45.</b> This window closes in [timeframe].</div>
+   <div class="hook"><b>46.</b> Do this one thing before the month ends.</div>
+   <div class="hook"><b>47.</b> The [season] mistake that costs people every year.</div>
+   <div class="hook"><b>48.</b> New rule for [year]: what it means for you.</div>
+   <div class="hook"><b>49.</b> Prices on [item] are about to change. Here's why.</div>
+   <div class="hook"><b>50.</b> Save this before you need it.</div>
+  </div>
+ </div>
+ <h3>💬 Captions that get real comments</h3>
+ <div class="card red"><b>Avoid:</b> "Comment YES", "Tag 3 friends", "Share if you agree". Facebook lowers the reach of these.</div>
+ <table>
+  <tbody><tr><th>Type</th><th>Example</th></tr>
+  <tr><td>Fact + question</td><td>"Americans spend $273 a month on subscriptions. Which one would you never cancel?"</td></tr>
+  <tr><td>Debate</td><td>"Rent or buy in 2026? Which side are you on, and what's your city?"</td></tr>
+  <tr><td>Missing piece</td><td>"We covered 5 hidden costs of owning a car. What did we miss?"</td></tr>
+  <tr><td>Series</td><td>"Part 1 of 3. Part 2 drops tomorrow."</td></tr>
+  <tr><td>Your story</td><td>"Has this ever happened to you? What did you do?"</td></tr>
+ </tbody></table>
+ <div class="card blue"><b>Caption formula:</b> Line 1 = short hook → Lines 2–3 = one extra fact not in the video → Last line = a real question. Use only 3–5 hashtags.</div>
+ <div class="foot"><span>Chapter 7 · Hooks &amp; captions</span><span>Page 19</span></div>
+</section>
+
+<!-- END -->
+<section class="page cover" id="end">
+ <span class="badge">SUPPORT &amp; LICENSE</span>
+ <h1 style="margin-top:20px">Thank you! 🙏</h1>
+ <p style="font-size:16px;color:#dbe4ff;margin-top:8px">Start today: make your Page, write 30 topics, and post your first Reel this week.</p>
+ <div style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:16px;padding:16px;margin-top:20px">
+  <h3 style="margin-top:0;color:#fff">📩 Need help?</h3>
+  <p style="color:#fff">Email: <a href="mailto:techpositive2002@gmail.com" style="color:#FDB022;font-weight:800">techpositive2002@gmail.com</a><br>Please include your order ID and chapter number.</p>
+ </div>
+ <div style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:16px;padding:16px;margin-top:12px">
+  <h3 style="margin-top:0;color:#fff">📜 License</h3>
+  <ul style="margin-left:18px;color:#fff"><li>For your personal use: read, print and use it to build your own pages.</li><li>You may use the prompts to make your own content.</li><li>Not allowed: reselling, sharing, uploading or rebranding this guide.</li><li>Resale rights only with written permission.</li></ul>
+ </div>
+ <div style="background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);border-radius:16px;padding:16px;margin-top:12px">
+  <h3 style="margin-top:0;color:#fff">⚖️ Disclaimer</h3>
+  <ul style="margin-left:18px;color:#fff;font-size:12px"><li>This guide is not connected to or approved by Meta Platforms, Inc. Facebook and Meta are their trademarks.</li><li>Earnings numbers are estimates and examples, not promises.</li><li>Facebook rules change often. Always check your dashboard and Meta's help pages.</li><li>Tax parts are general information, not professional advice.</li></ul>
+ </div>
+ <p style="margin-top:14px;font-size:11px;color:#dbe4ff">Sources: Meta Newsroom – "Creator Fast Track" (Mar 2026) and "Rewarding Original Creators on Facebook" (Mar 2026); Meta for Creators – Facebook Content Monetization; Facebook Creator Content Monetization Terms.</p>
+ <div class="foot"><span>© 2026 Facebook Money Playbook · All rights reserved</span><span>Page 20</span></div>
+</section>
+
+<script>
+document.querySelectorAll('.check li').forEach(li=>li.addEventListener('click',()=>li.classList.toggle('on')));
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{
+ const t=b.parentElement.innerText.replace(/^Copy\s*/,'');
+ const done=()=>{b.textContent='Copied ✓';setTimeout(()=>b.textContent='Copy',1500)};
+ if(navigator.clipboard){navigator.clipboard.writeText(t).then(done).catch(()=>{fallback(t);done()})}else{fallback(t);done()}
+}));
+function fallback(t){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}a.remove()}
+</script>
+
+
+</body></html>

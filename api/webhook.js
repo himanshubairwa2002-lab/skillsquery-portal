@@ -20,7 +20,8 @@ export default async function handler(req, res) {
       if (email) {
         console.log(`[Razorpay Webhook] Received payment ${payment.id} for ₹${payment.amount / 100} from ${email}`);
 
-        const pdfDownloadUrl = 'https://www.skillsquery.com/Facebook_Page_Monetization_Master_Playbook_2026.pdf';
+        const englishPdfUrl = 'https://www.skillsquery.com/Facebook_Page_Monetization_Master_Playbook_2026_English.pdf';
+        const hindiPdfUrl = 'https://www.skillsquery.com/Facebook_Page_Monetization_Master_Playbook_2026_Hindi.pdf';
         const supportEmail = 'techpositive2002@gmail.com';
 
         const emailHtml = `
@@ -36,7 +37,8 @@ export default async function handler(req, res) {
     p { color: #cbd5e1; font-size: 15px; line-height: 1.6; }
     .highlight-box { background-color: #0b0f19; border: 1px solid #334155; border-radius: 12px; padding: 20px; margin: 24px 0; }
     .checklist-item { color: #a7f3d0; font-size: 14px; margin: 8px 0; }
-    .cta-btn { display: block; text-align: center; background: linear-gradient(135deg, #fbbf24, #f59e0b); color: #000000 !important; font-weight: 900; font-size: 16px; padding: 16px 28px; border-radius: 12px; text-decoration: none; margin: 24px 0; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4); }
+    .cta-btn-blue { display: block; text-align: center; background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: #ffffff !important; font-weight: 800; font-size: 15px; padding: 14px 24px; border-radius: 12px; text-decoration: none; margin: 12px 0; box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4); }
+    .cta-btn-gold { display: block; text-align: center; background: linear-gradient(135deg, #fbbf24, #f59e0b); color: #000000 !important; font-weight: 900; font-size: 15px; padding: 14px 24px; border-radius: 12px; text-decoration: none; margin: 12px 0; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4); }
     .footer { font-size: 12px; color: #64748b; text-align: center; margin-top: 32px; border-top: 1px solid #1e293b; padding-top: 20px; }
   </style>
 </head>
@@ -45,20 +47,26 @@ export default async function handler(req, res) {
     <span class="badge">Payment Verified • ₹299</span>
     <h1>Your Facebook Monetization Master Playbook is Here! 🚀</h1>
     <p>Hi <strong>${customerName}</strong>,</p>
-    <p>We received your payment (Payment ID: <code>${payment.id}</code>). Your copy of the <strong>Facebook Page Content Monetization Master Playbook (2026 Edition)</strong> is ready for instant download below.</p>
+    <p>We received your payment (Payment ID: <code>${payment.id}</code>). Your purchase includes <strong>BOTH the English Edition and the संपूर्ण हिंदी संस्करण (20 Pages Each)</strong>:</p>
 
-    <div class="highlight-box">
-      <div style="font-weight: bold; color: #ffffff; margin-bottom: 10px;">What's inside your deliverable:</div>
-      <div class="checklist-item">✅ 30-Day Zero to ₹1,50,000/Month Blueprint</div>
-      <div class="checklist-item">✅ Top 10 High-CPM Meta Niches ($15 - $35 RPM)</div>
-      <div class="checklist-item">✅ 500+ Viral Hook & Caption Prompts Vault</div>
-      <div class="checklist-item">✅ 24-Hour Viral Group Sharing & LOC Bypass Strategy</div>
-      <div class="checklist-item">✅ Meta Pay Bank Setup & Indian SWIFT Wire Guide</div>
+    <div style="margin: 24px 0;">
+      <a href="${englishPdfUrl}" class="cta-btn-blue" target="_blank">
+        📘 Download English Edition (20-Page PDF)
+      </a>
+
+      <a href="${hindiPdfUrl}" class="cta-btn-gold" target="_blank">
+        📙 डाउनलोड करें हिंदी संस्करण (20-पेज संपूर्ण PDF)
+      </a>
     </div>
 
-    <a href="${pdfDownloadUrl}" class="cta-btn" target="_blank">
-      📥 Click Here To Download Master Playbook (PDF)
-    </a>
+    <div class="highlight-box">
+      <div style="font-weight: bold; color: #ffffff; margin-bottom: 10px;">What's inside your 20-page manuals:</div>
+      <div class="checklist-item">✅ 2026 Meta Content Monetization Architecture</div>
+      <div class="checklist-item">✅ 30-Day Zero to $5,000/Month Implementation Blueprint</div>
+      <div class="checklist-item">✅ Top 10 High-CPM Meta Niches ($15 - $35 RPM)</div>
+      <div class="checklist-item">✅ 500+ Viral Hook & Caption Prompts Vault</div>
+      <div class="checklist-item">✅ Indian Bank Payout Setup (SWIFT, W-8BEN, GST & ITR)</div>
+    </div>
 
     <p style="font-size: 13px; color: #94a3b8; text-align: center;">
       Direct link: <a href="${pdfDownloadUrl}" style="color: #fbbf24;">${pdfDownloadUrl}</a>
