@@ -242,11 +242,16 @@ When running campaigns or research across different models (Gemini, Claude, GPT,
 
 ### Live Production Campaign Deployment (Created via Meta Ads MCP)
 * **Campaign ID**: `120251947553870548` (`SkillQuery_FB_Monetization_Traffic_Oct2026`)
-* **Ad Set ID**: `120251947559910548` (`SkillQuery_India_18-38_Creators_Broad`)
-* **Creative ID**: `1453747650201526` (`SkillQuery_FB_Monetization_Video_Creative` - Page: `MaanshuKart` `755551467647786`)
-* **Ad ID**: `120251947776430548` (`SkillQuery_FB_Monetization_Video_Ad_v1`)
-* **Video Asset ID**: `1776778736872768` (Uploaded master 9:16 vertical video)
-* **Thumbnail Hash**: `85d100427f7f6cac17fada92551a1f99`
+* **Ad Set ID**: `120251947559910548` (`SkillQuery_India_18-38_Creators_Broad` - Budget: ₹600/day / `60000` paisa)
+* **Ad 1 (Video Ad)**:
+  * **Ad ID**: `120251947776430548` (`SkillQuery_FB_Monetization_Video_Ad_v1`)
+  * **Creative ID**: `1453747650201526` (`SkillQuery_FB_Monetization_Video_Creative`)
+  * **Video Asset ID**: `1776778736872768` (49.53s vertical 9:16)
+  * **Thumbnail Hash**: `85d100427f7f6cac17fada92551a1f99`
+* **Ad 2 (High-CTR Earning Proof Image Ad)**:
+  * **Ad ID**: `120251947838900548` (`SkillQuery_FB_Monetization_HighCTR_Image_Ad_v1`)
+  * **Creative ID**: `929533736582609` (`SkillQuery_FB_Monetization_HighCTR_Image_Creative`)
+  * **Image Hash**: `02730f0589a28786be290ad94f4f12e5` (Authentic Indian creator with live Creator Studio dashboard showing ₹84,750 monetization earnings and In-Stream approval)
 * **Status**: `PAUSED` (Ready to activate anytime from Meta Ads MCP or Ads Manager)
 
 ### High-Converting Hinglish Ad Copy Template
