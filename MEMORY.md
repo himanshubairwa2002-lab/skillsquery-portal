@@ -240,6 +240,15 @@ When running campaigns or research across different models (Gemini, Claude, GPT,
 * **Starting Budget**: ₹500/day to ₹1,000/day per ad set (`50000` to `100000` paisa).
 * **Scaling Cadence**: Increase daily budget by 15–20% every 48–72 hours on winning ad sets. Never double overnight.
 
+### Live Production Campaign Deployment (Created via Meta Ads MCP)
+* **Campaign ID**: `120251947553870548` (`SkillQuery_FB_Monetization_Traffic_Oct2026`)
+* **Ad Set ID**: `120251947559910548` (`SkillQuery_India_18-38_Creators_Broad`)
+* **Creative ID**: `1453747650201526` (`SkillQuery_FB_Monetization_Video_Creative` - Page: `MaanshuKart` `755551467647786`)
+* **Ad ID**: `120251947776430548` (`SkillQuery_FB_Monetization_Video_Ad_v1`)
+* **Video Asset ID**: `1776778736872768` (Uploaded master 9:16 vertical video)
+* **Thumbnail Hash**: `85d100427f7f6cac17fada92551a1f99`
+* **Status**: `PAUSED` (Ready to activate anytime from Meta Ads MCP or Ads Manager)
+
 ### High-Converting Hinglish Ad Copy Template
 * **Primary Text**:
   > Facebook par roz Reels aur Videos upload kar rahe ho, par 1 rupiya bhi nahi ban raha? ❌
