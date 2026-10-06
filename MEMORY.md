@@ -248,10 +248,15 @@ When running campaigns or research across different models (Gemini, Claude, GPT,
   * **Creative ID**: `1453747650201526` (`SkillQuery_FB_Monetization_Video_Creative`)
   * **Video Asset ID**: `1776778736872768` (49.53s vertical 9:16)
   * **Thumbnail Hash**: `85d100427f7f6cac17fada92551a1f99`
-* **Ad 2 (High-CTR Earning Proof Image Ad)**:
+  * **Status**: `ACTIVE` 🟢 (Top Performer: 7.12% CTR, ₹0.53 CPC, ₹1.30 Cost/LPV)
+* **Ad 2 (Old Image Ad)**:
   * **Ad ID**: `120251947838900548` (`SkillQuery_FB_Monetization_HighCTR_Image_Ad_v1`)
-  * **Creative ID**: `929533736582609` (`SkillQuery_FB_Monetization_HighCTR_Image_Creative`)
-  * **Status**: `ACTIVE` (Live and delivering impressions via Meta Ads MCP)
+  * **Status**: `PAUSED` ⏸️ (Budget bleed stopped per user instruction)
+* **Ad 3 (New Before/After Split Payout Creative)**:
+  * **Ad ID**: `120251955083190548` (`SkillQuery_FB_Monetization_BeforeAfter_Split_Ad_v2`)
+  * **Creative ID**: `3289468181441903`
+  * **Image Hash**: `2dc0e59bc7026d7a268364f9094a70c3` (Dramatic Before/After Policy Violation vs ₹1,48,920 Bank Payout)
+  * **Status**: `PAUSED` (Ready to activate anytime via Meta MCP)
 
 ### High-Converting Hinglish Ad Copy Template
 * **Primary Text**:
