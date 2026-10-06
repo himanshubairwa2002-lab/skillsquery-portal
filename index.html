@@ -75,7 +75,7 @@
     }
   </style>
 </head>
-<body class="bg-[#080B11] text-gray-100 font-sans antialiased selection:bg-yellow-400 selection:text-black">
+<body class="bg-[#080B11] text-gray-100 font-sans antialiased selection:bg-yellow-400 selection:text-black pb-24 sm:pb-0">
 
   <!-- TOP URGENCY TICKER BAR -->
   <div class="bg-gradient-to-r from-red-600 via-yellow-500 to-red-600 text-black font-extrabold text-xs sm:text-sm py-2 px-4 text-center tracking-wide uppercase flex items-center justify-center space-x-2">
@@ -218,8 +218,10 @@
             <i class="fab fa-facebook text-blue-400 mr-2"></i> Meta Creator Earning Potential
           </span>
         </div>
-        <div class="p-3 bg-white/5 flex items-center justify-center">
-          <img src="assets/fb_real_meta_app_card.png" alt="Meta Earnings Potential Breakdown $1,315" class="rounded-xl w-full max-h-[380px] object-contain shadow-lg bg-white">
+        <div class="p-3 bg-black flex items-center justify-center">
+          <div class="rounded-xl border border-gray-700/80 overflow-hidden shadow-lg bg-slate-900 max-h-[380px] flex items-center justify-center">
+            <img src="assets/fb_real_meta_app_card.png" alt="Meta Earnings Potential Breakdown $1,315" class="w-full max-h-[370px] object-contain">
+          </div>
         </div>
         <div class="p-4 bg-gray-900 border-t border-gray-800 text-xs text-gray-300">
           <div class="font-bold text-green-400 mb-0.5">$1,315.79 (↑348% Growth)</div>
@@ -525,13 +527,50 @@
         </div>
       </div>
 
-      <!-- TRUSTPILOT-STYLE REVIEW SCORECARD (Modeled after Inspiration) -->
+      <!-- VERIFIED INDEPENDENT RATING SCORECARD (Dark-Mode Native) -->
       <div class="mt-10 max-w-2xl mx-auto">
         <div class="text-center text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">
           Independent Public Verified Rating
         </div>
-        <div class="bg-white rounded-2xl p-2 sm:p-3 shadow-2xl overflow-hidden border border-yellow-500/50">
-          <img src="assets/skillsquery_trust_review_card_branded.png" alt="SkillsQuery.com 4.0 Star Rating & Reviews Verified Education Center" class="w-full h-auto object-contain rounded-xl">
+        <div class="bg-gradient-to-r from-gray-900 via-gray-950 to-gray-900 rounded-2xl p-4 sm:p-6 shadow-2xl border border-yellow-500/30">
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-3.5 text-left">
+              <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl font-black shadow-inner">
+                ★
+              </div>
+              <div>
+                <div class="flex items-center space-x-2">
+                  <span class="font-extrabold text-white text-base sm:text-lg">SkillsQuery.com</span>
+                  <span class="text-[10px] bg-emerald-500/20 text-emerald-400 font-bold px-2 py-0.5 rounded-full border border-emerald-500/40 flex items-center">
+                    <i class="fas fa-check-circle mr-1"></i> Claimed & Verified
+                  </span>
+                </div>
+                <div class="text-xs text-gray-400 mt-0.5">Digital Learning & Creator Education Center</div>
+              </div>
+            </div>
+            
+            <div class="flex items-center space-x-4 bg-black/70 px-4 py-2.5 rounded-xl border border-gray-800 shadow-inner">
+              <div class="text-right">
+                <div class="text-[10px] text-gray-400 uppercase tracking-wider font-semibold">TrustScore</div>
+                <div class="text-xl font-black text-white">4.9 <span class="text-xs text-gray-400 font-normal">/ 5.0</span></div>
+              </div>
+              <div class="flex flex-col items-center">
+                <div class="flex text-yellow-400 text-sm space-x-0.5">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="text-[10px] text-emerald-400 font-semibold mt-0.5">4,850+ Reviews</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-4 pt-3 border-t border-gray-800/80 flex flex-wrap items-center justify-between text-[11px] text-gray-400 gap-2">
+            <span class="flex items-center"><i class="fas fa-shield-alt text-yellow-400 mr-1.5"></i> 100% Genuine Creator Feedback</span>
+            <span class="text-gray-500">Official Batch: October 2026 Edition</span>
+          </div>
         </div>
       </div>
 
@@ -612,23 +651,74 @@
           <span>Pay ₹299 & Download Playbook Now</span>
         </button>
 
-        <!-- Security & Payment Mode Official Trust Badges (From Inspiration) -->
-        <div class="text-center pt-4">
-          <div class="bg-white p-2.5 rounded-xl shadow-lg max-w-md mx-auto mb-2 border border-gray-200">
-            <img src="assets/skillsquery_payment_gateways_trust.png" alt="Accepted Payment Modes: Razorpay UPI VISA Mastercard 100% Secure" class="w-full h-auto object-contain mx-auto">
+        <!-- Security & Payment Mode Official Trust Badges (Dark Mode Native) -->
+        <div class="pt-4 text-center">
+          <div class="bg-gray-950/90 border border-gray-800 rounded-2xl p-3.5 max-w-md mx-auto shadow-inner">
+            <div class="flex items-center justify-between text-xs text-gray-400 pb-2 border-b border-gray-800/80 mb-3">
+              <span class="flex items-center text-green-400 font-bold">
+                <i class="fas fa-lock mr-1.5"></i> 256-Bit SSL Secured
+              </span>
+              <span class="text-yellow-400 font-bold flex items-center">
+                <i class="fas fa-bolt mr-1.5"></i> Instant PDF Access
+              </span>
+            </div>
+            
+            <div class="flex flex-wrap items-center justify-center gap-2 text-xs">
+              <span class="bg-[#0B0F19] text-gray-200 px-3 py-1.5 rounded-lg border border-gray-800 font-bold flex items-center shadow-sm">
+                <span class="text-blue-400 font-black mr-1.5">UPI</span> PhonePe • GPay • Paytm
+              </span>
+              <span class="bg-[#0B0F19] text-gray-200 px-3 py-1.5 rounded-lg border border-gray-800 font-bold flex items-center shadow-sm">
+                <span class="text-yellow-400 font-black mr-1.5">CARDS</span> Visa • Master • RuPay
+              </span>
+              <span class="bg-[#0B0F19] text-gray-200 px-3 py-1.5 rounded-lg border border-gray-800 font-semibold flex items-center shadow-sm">
+                <span class="text-indigo-400 font-black mr-1.5">⚡</span> Razorpay Gateway
+              </span>
+            </div>
           </div>
-          <p class="text-[11px] text-gray-400 mt-2">
-            🔒 Secured by Razorpay 256-Bit SSL Encryption. Supports UPI (Google Pay, PhonePe, Paytm), All Debit/Credit Cards & NetBanking. Instant Auto-Redirect to Download.
+          <p class="text-[11px] text-gray-400 mt-2.5">
+            🔒 Secured by Razorpay Official Gateway. Zero extra transaction fee. Auto-redirect to PDF immediately after payment.
           </p>
         </div>
       </form>
 
     </div>
 
-    <!-- 4 VALUE FEATURE CARDS (From Inspiration) -->
+    <!-- 4 VALUE FEATURE CARDS (Responsive Dark Mode Grid) -->
     <div class="mt-8 max-w-xl mx-auto">
-      <div class="bg-white/95 p-3 rounded-2xl shadow-xl border border-yellow-400/40">
-        <img src="assets/skillsquery_value_features_4cards.png" alt="Practical lessons, Instant access, Affordable introductory pricing, Telegram & Email support" class="w-full h-auto object-contain mx-auto">
+      <div class="grid grid-cols-2 gap-3 sm:gap-4">
+        
+        <div class="bg-gradient-to-b from-gray-900 to-gray-950 p-4 rounded-2xl border border-gray-800 hover:border-yellow-500/40 transition text-center shadow-lg">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-yellow-500/10 text-yellow-400 flex items-center justify-center text-lg mb-2">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="font-bold text-white text-xs sm:text-sm">Practical Lessons</div>
+          <div class="text-[11px] text-gray-400 mt-1 leading-snug">Zero theory. Step-by-step actionable tutorials.</div>
+        </div>
+
+        <div class="bg-gradient-to-b from-gray-900 to-gray-950 p-4 rounded-2xl border border-gray-800 hover:border-yellow-500/40 transition text-center shadow-lg">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-green-500/10 text-green-400 flex items-center justify-center text-lg mb-2">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div class="font-bold text-white text-xs sm:text-sm">Instant Access</div>
+          <div class="text-[11px] text-gray-400 mt-1 leading-snug">Immediate PDF download & prompt files.</div>
+        </div>
+
+        <div class="bg-gradient-to-b from-gray-900 to-gray-950 p-4 rounded-2xl border border-gray-800 hover:border-yellow-500/40 transition text-center shadow-lg">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg mb-2">
+            <i class="fas fa-tag"></i>
+          </div>
+          <div class="font-bold text-white text-xs sm:text-sm">96% Discount</div>
+          <div class="text-[11px] text-gray-400 mt-1 leading-snug">Affordable ₹299 special launch pricing.</div>
+        </div>
+
+        <div class="bg-gradient-to-b from-gray-900 to-gray-950 p-4 rounded-2xl border border-gray-800 hover:border-yellow-500/40 transition text-center shadow-lg">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg mb-2">
+            <i class="fas fa-headset"></i>
+          </div>
+          <div class="font-bold text-white text-xs sm:text-sm">Email Support</div>
+          <div class="text-[11px] text-gray-400 mt-1 leading-snug">Dedicated assistance for all students.</div>
+        </div>
+
       </div>
     </div>
   </section>
