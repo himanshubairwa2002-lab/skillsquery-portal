@@ -305,7 +305,37 @@ When automated API calls encounter permission, verification, or UI-specific bloc
 * **Primary Capabilities**:
   1. `get_windows_and_tabs` — Locate active Meta Business Suite / Ads Manager tabs.
   2. `chrome_navigate` / `navigate_page` — Open Meta Ads Manager directly at `https://adsmanager.facebook.com/adsmanager/manage/campaigns?act=787469274344806`.
-  3. `chrome_click_element` / `chrome_fill_or_select` — Resolve 2FA challenges, verify domain ownership, approve ad previews, or publish drafts directly in Meta's native interface.
-  4. `chrome_screenshot` — Capture visual confirmation of campaign status, delivery errors, or pixel event diagnostics.
 
+---
 
+## 12. October 6, 2026: Conversion Optimization & Transition to OUTCOME_SALES
+
+### Root Cause Audit (Why 0 Purchases Occurred on Traffic Campaign)
+1. **Wrong Meta Objective**: Campaign `120251947553870548` was configured as `OUTCOME_TRAFFIC` + `LANDING_PAGE_VIEWS`. Meta delivered cheap clicks (₹0.93 CPC) from users prone to clicking ads, but who statistically never buy.
+2. **Creative Offer Disconnect**: Video creative CTA was `LEARN_MORE` and copy said *"seat book karein"*, leading prospects to expect a free webinar/masterclass rather than an immediate ₹299 paid PDF.
+3. **Checkout Parameter Drop-off**: Phone input was being passed as `phone=` instead of Razorpay's required `contact=` and `phone=`, causing the checkout modal on `pages.razorpay.com` to prompt the user to re-enter their phone number from scratch.
+4. **Visual Trust Friction**: Three stark white rectangular placeholders (`bg-white`) on a dark theme created an unpolished appearance on mobile screens.
+
+### Remediation & Active Campaign Deployment
+* **Paused Campaign**: `120251947553870548` (`SkillQuery_FB_Monetization_Traffic_Oct2026`) -> `PAUSED` ⏸️
+* **Active Sales Campaign**:
+  * **Campaign ID**: `120251959210780548` (`SkillQuery_FB_Monetization_Sales_Oct2026_v1`)
+  * **Objective**: `OUTCOME_SALES` 🟢
+  * **Budget Type**: ABO (Ad Set Budget Optimization)
+* **Active Sales Ad Set**:
+  * **Ad Set ID**: `120251959213430548` (`SkillQuery_India_18-38_Creators_Purchase_Broad`)
+  * **Optimization Goal**: `OFFSITE_CONVERSIONS`
+  * **Promoted Object**: `{"pixel_id": "2043692866312535", "custom_event_type": "PURCHASE"}`
+  * **Daily Budget**: ₹500/day (`50000` paisa)
+  * **Status**: `ACTIVE`
+* **Active Sales Ad**:
+  * **Ad ID**: `120251959218900548` (`SkillQuery_FB_Monetization_Video_Ad_Sales_v1`)
+  * **Creative ID**: `2550672358711436`
+  * **Call to Action**: `ORDER_NOW`
+  * **Headline**: `Facebook Monetization Playbook 2026 (₹299 Only) ⚡ Instant PDF`
+  * **Copy**: Price-transparent Hinglish copy explicitly setting expectations of ₹299 instant download.
+  * **Status**: `ACTIVE` (in Meta automated review)
+* **Landing Page Upgrades**:
+  * Clean dark-mode components replacing all white boxes.
+  * Sanitized phone number logic passing both `contact` and `phone` to Razorpay for prefilling.
+  * Instant auto-download guarantee badge and clear `Pay ₹299 (UPI / Card) & Download Playbook ➔` CTA.
