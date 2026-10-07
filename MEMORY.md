@@ -328,9 +328,11 @@ When automated API calls encounter permission, verification, or UI-specific bloc
   * **Promoted Object**: `{"pixel_id": "2043692866312535", "custom_event_type": "PURCHASE"}`
   * **Daily Budget**: ₹500/day (`50000` paisa)
   * **Status**: `ACTIVE`
-* **Active Sales Ads**:
-  * **Ad 1 (Video)**: `120251959218900548` (`SkillQuery_FB_Monetization_Video_Ad_Sales_v1`) — Creative `2550672358711436`, `ORDER_NOW` CTA. Status: `ACTIVE` 🟢
-  * **Ad 2 (Static Image)**: `120251968761500548` (`SkillQuery_FB_Monetization_BeforeAfter_Split_Ad_Sales_v1`) — Creative `1152731337409447`, Dramatic Before/After Policy Violation vs ₹1,48,920 Payout Proof, `ORDER_NOW` CTA. Status: `PENDING_REVIEW` ⏳
+* **Sales Ad Set Roster**:
+  * **Ad 1 (10s Vertical UGC Video)**: `120251974111010548` (`SkillQuery_FB_Monetization_10s_UGC_Video_Ad_v1`) — Video `4470888109800082` (`a_Photorealistic_10-se.mp4`), Creative `2065311261538416`, `DOWNLOAD` CTA 🟢 (IN_PROCESS review)
+  * **Ad 2 (UGC Video v2)**: `120251974154950548` (`SkillQuery_FB_Monetization_UGC_Video_Ad_v2`) — Video `2926880490978411` (`b_A_hyper-realistic_40.mp4`), Creative `4590148594606355`, `DOWNLOAD` CTA 🟢 (IN_PROCESS review)
+  * **Ad 3 (Static Image Proof)**: `120251968761500548` (`SkillQuery_FB_Monetization_BeforeAfter_Split_Ad_Sales_v1`) — Creative `1152731337409447`, `ORDER_NOW` CTA. Status: `ACTIVE` 🟢
+  * **Old Video Ad (Paused)**: `120251959218900548` (`SkillQuery_FB_Monetization_Video_Ad_Sales_v1`) — Status: `PAUSED` ⏸️
 * **Landing Page Upgrades**:
   * Clean dark-mode components replacing all white boxes.
   * Sanitized phone number logic passing both `contact` and `phone` to Razorpay for prefilling.
