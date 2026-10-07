@@ -328,14 +328,11 @@ When automated API calls encounter permission, verification, or UI-specific bloc
   * **Promoted Object**: `{"pixel_id": "2043692866312535", "custom_event_type": "PURCHASE"}`
   * **Daily Budget**: ₹500/day (`50000` paisa)
   * **Status**: `ACTIVE`
-* **Active Sales Ad**:
-  * **Ad ID**: `120251959218900548` (`SkillQuery_FB_Monetization_Video_Ad_Sales_v1`)
-  * **Creative ID**: `2550672358711436`
-  * **Call to Action**: `ORDER_NOW`
-  * **Headline**: `Facebook Monetization Playbook 2026 (₹299 Only) ⚡ Instant PDF`
-  * **Copy**: Price-transparent Hinglish copy explicitly setting expectations of ₹299 instant download.
-  * **Status**: `ACTIVE` (in Meta automated review)
+* **Active Sales Ads**:
+  * **Ad 1 (Video)**: `120251959218900548` (`SkillQuery_FB_Monetization_Video_Ad_Sales_v1`) — Creative `2550672358711436`, `ORDER_NOW` CTA. Status: `ACTIVE` 🟢
+  * **Ad 2 (Static Image)**: `120251968761500548` (`SkillQuery_FB_Monetization_BeforeAfter_Split_Ad_Sales_v1`) — Creative `1152731337409447`, Dramatic Before/After Policy Violation vs ₹1,48,920 Payout Proof, `ORDER_NOW` CTA. Status: `PENDING_REVIEW` ⏳
 * **Landing Page Upgrades**:
   * Clean dark-mode components replacing all white boxes.
   * Sanitized phone number logic passing both `contact` and `phone` to Razorpay for prefilling.
   * Instant auto-download guarantee badge and clear `Pay ₹299 (UPI / Card) & Download Playbook ➔` CTA.
+  * Added 100% Risk-Free 7-Day Money-Back Guarantee box directly before checkout.
