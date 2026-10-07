@@ -338,3 +338,33 @@ When automated API calls encounter permission, verification, or UI-specific bloc
   * Sanitized phone number logic passing both `contact` and `phone` to Razorpay for prefilling.
   * Instant auto-download guarantee badge and clear `Pay ₹299 (UPI / Card) & Download Playbook ➔` CTA.
   * Added 100% Risk-Free 7-Day Money-Back Guarantee box directly before checkout.
+
+---
+
+## 13. October 7, 2026: The "Conversion Ladder" Strategy Deployment (INITIATED_CHECKOUT)
+
+### Diagnostic Finding (Why Meta Barely Spent ₹51 Out of ₹500)
+* Ad Set `120251959213430548` was optimized for `PURCHASE` on a brand-new pixel (`2043692866312535`) with 0 lifetime purchase events.
+* Meta's machine learning algorithm throttle-bids when optimizing for `PURCHASE` with zero conversion history to avoid aggressive loss, spending only ₹51.25 across an entire day (only 4 landing page views).
+* With 4 daily visits, purchases were statistically impossible despite stellar creative CTR (11.11% on UGC v2).
+
+### Action Taken: Unthrottling via INITIATED_CHECKOUT Ladder
+* **New Active Ad Set**:
+  * **Ad Set ID**: `120251976766310548` (`SkillQuery_India_Creators_InitiatedCheckout_Ladder`)
+  * **Campaign ID**: `120251959210780548` (`SkillQuery_FB_Monetization_Sales_Oct2026_v1`)
+  * **Optimization Goal**: `OFFSITE_CONVERSIONS`
+  * **Promoted Object**: `{"pixel_id": "2043692866312535", "custom_event_type": "INITIATED_CHECKOUT"}`
+  * **Bid Strategy**: `LOWEST_COST_WITHOUT_CAP`
+  * **Daily Budget**: ₹500/day (`50000` paisa)
+  * **Status**: `ACTIVE` 🟢
+* **Active Ads Roster in New Ad Set**:
+  1. **Ad 1 (UGC Video v2)**: `120251976776820548` (`SkillQuery - UGC Video v2 (InitiatedCheckout)`) — Creative `4590148594606355`, `DOWNLOAD` CTA, `ACTIVE` 🟢
+  2. **Ad 2 (10s Vertical UGC)**: `120251976779300548` (`SkillQuery - 10s Vertical UGC (InitiatedCheckout)`) — Creative `2065311261538416`, `DOWNLOAD` CTA, `ACTIVE` 🟢
+  3. **Ad 3 (Before/After Proof Image)**: `120251976782000548` (`SkillQuery - Before/After Proof Image (InitiatedCheckout)`) — Creative `1152731337409447`, `ORDER_NOW` CTA, `ACTIVE` 🟢
+* **Paused Old Throttled Ad Set**:
+  * **Ad Set ID**: `120251959213430548` -> `PAUSED` ⏸️ (Eliminated budget split and auction throttling)
+* **Expected Outcome**:
+  * Meta un-throttles the auction and spends the full ₹500 daily budget smoothly.
+  * Delivers 50–70 high-intent checkout visitors per day to `skillsquery.com`.
+  * Generates the first purchase conversions on Razorpay, which train the pixel to eventually graduate back to pure `PURCHASE` optimization.
+
