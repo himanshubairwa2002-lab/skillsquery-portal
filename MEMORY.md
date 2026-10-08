@@ -358,7 +358,7 @@ When automated API calls encounter permission, verification, or UI-specific bloc
   * **Daily Budget**: ₹500/day (`50000` paisa)
   * **Status**: `ACTIVE` 🟢
 * **Active Ads Roster in New Ad Set**:
-  1. **Ad 1 (UGC Video v2)**: `120251976776820548` (`SkillQuery - UGC Video v2 (InitiatedCheckout)`) — Sanitized Creative `965117653318680` (v3 compliant, removed 'bypass' keywords), `DOWNLOAD` CTA, Status: `IN_PROCESS` (Re-review) 🔄
+  1. **Ad 1 (UGC Video v2)**: `120251976776820548` (`SkillQuery - UGC Video v2 (InitiatedCheckout)`) — Sanitized Creative `965117653318680` (v3 compliant, removed 'bypass' keywords), `DOWNLOAD` CTA, Status: `ACTIVE` 🟢 (APPROVED by Meta review)
   2. **Ad 2 (10s Vertical UGC)**: `120251976779300548` (`SkillQuery - 10s Vertical UGC (InitiatedCheckout)`) — Sanitized Creative `2226714851228225` (v3 compliant), Status: `PAUSED` ⏸️
   3. **Ad 3 (Before/After Proof Image)**: `120251976782000548` (`SkillQuery - Before/After Proof Image (InitiatedCheckout)`) — Creative `1152731337409447`, `ORDER_NOW` CTA, Status: `ACTIVE` 🟢 (Actively serving)
 * **Policy Compliance Inspection (Oct 8, 2026)**:
