@@ -20,7 +20,7 @@ export default async function handler(req, res) {
       console.log(`[Razorpay Webhook] Received payment ${payment?.id} of ₹${(payment?.amount || 9900) / 100} from ${email || 'customer'}`);
 
       if (email) {
-        const pdfDownloadUrl = 'https://hairfallhacks.com/downloads/99-Hair-Hacks-Master-Book.pdf'; // Or direct local/CDN asset
+        const pdfDownloadUrl = 'https://www.skillsquery.com/hairfall-hacks/downloads/99-Hair-Hacks-Master-Book.pdf';
         const supportEmail = 'techpositive2002@gmail.com';
 
         const emailHtml = `
