@@ -7,6 +7,24 @@
   <title>99 Hair Hacks Master Book — Stop Hairfall in 7 Days for ₹9 (Flash Sale) (Hindi + English)</title>
   <meta name="description" content="The 99 Hair Hacks MASTER BOOK (Hindi + English) — 99 tested Indian kitchen hacks to reduce hairfall, regrow baby hair, fix a receding hairline. No minoxidil, no ₹1000 serums. Instant delivery on WhatsApp. Just ₹9 (Special Flash Sale)." />
 
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2043692866312535');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2043692866312535&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -565,6 +583,19 @@
       wrap.addEventListener('touchstart',onDown,{passive:false});window.addEventListener('touchmove',onMove,{passive:false});window.addEventListener('touchend',onUp);
     }
     initBA('ba1');initBA('ba2');
+
+    // Track InitiateCheckout on Razorpay CTA button clicks
+    document.querySelectorAll('a[href*="rzp.io"]').forEach(btn => {
+      btn.addEventListener('click', function() {
+        if (typeof fbq === 'function') {
+          fbq('track', 'InitiateCheckout', {
+            content_name: '99 Hair Hacks Master Book',
+            currency: 'INR',
+            value: 9.00
+          });
+        }
+      });
+    });
   </script>
 </body>
 </html>
