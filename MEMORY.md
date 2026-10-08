@@ -358,13 +358,18 @@ When automated API calls encounter permission, verification, or UI-specific bloc
   * **Daily Budget**: ₹500/day (`50000` paisa)
   * **Status**: `ACTIVE` 🟢
 * **Active Ads Roster in New Ad Set**:
-  1. **Ad 1 (UGC Video v2)**: `120251976776820548` (`SkillQuery - UGC Video v2 (InitiatedCheckout)`) — Creative `4590148594606355`, `DOWNLOAD` CTA, `ACTIVE` 🟢
-  2. **Ad 2 (10s Vertical UGC)**: `120251976779300548` (`SkillQuery - 10s Vertical UGC (InitiatedCheckout)`) — Creative `2065311261538416`, `DOWNLOAD` CTA, `ACTIVE` 🟢
-  3. **Ad 3 (Before/After Proof Image)**: `120251976782000548` (`SkillQuery - Before/After Proof Image (InitiatedCheckout)`) — Creative `1152731337409447`, `ORDER_NOW` CTA, `ACTIVE` 🟢
+  1. **Ad 1 (UGC Video v2)**: `120251976776820548` (`SkillQuery - UGC Video v2 (InitiatedCheckout)`) — Creative `4590148594606355`, `DOWNLOAD` CTA, `ACTIVE` 🟢 (Top performer: 11.11% CTR, ₹0.66 CPC)
+  2. **Ad 2 (10s Vertical UGC)**: `120251976779300548` (`SkillQuery - 10s Vertical UGC (InitiatedCheckout)`) — `PAUSED` ⏸️ (Paused to prevent budget dilution on a tight ₹500 budget)
+  3. **Ad 3 (Before/After Proof Image)**: `120251976782000548` (`SkillQuery - Before/After Proof Image (InitiatedCheckout)`) — Creative `1152731337409447`, `ORDER_NOW` CTA, `ACTIVE` 🟢 (High trust proof: 5.88% CTR)
+* **Budget Replenishment (Oct 8, 2026)**:
+  * User added ₹500 prepaid funds (Net spendable: ₹423.72 after GST).
+  * Spend cap updated to `826862`. Ad delivery unblocked.
+  * Budget strictly concentrated on top 2 highest-converting creatives to maximize landing page visits and purchases.
 * **Paused Old Throttled Ad Set**:
   * **Ad Set ID**: `120251959213430548` -> `PAUSED` ⏸️ (Eliminated budget split and auction throttling)
 * **Expected Outcome**:
-  * Meta un-throttles the auction and spends the full ₹500 daily budget smoothly.
-  * Delivers 50–70 high-intent checkout visitors per day to `skillsquery.com`.
-  * Generates the first purchase conversions on Razorpay, which train the pixel to eventually graduate back to pure `PURCHASE` optimization.
+  * Meta un-throttles the auction and spends the ₹423.72 balance smoothly.
+  * Delivers 40–60 high-intent checkout visitors to `skillsquery.com`.
+  * Generates the first purchase conversions on Razorpay to achieve early revenue and train the pixel.
+
 
