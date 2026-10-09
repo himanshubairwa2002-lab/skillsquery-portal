@@ -376,4 +376,32 @@ When automated API calls encounter permission, verification, or UI-specific bloc
   * Delivers 40–60 high-intent checkout visitors to `skillsquery.com`.
   * Generates the first purchase conversions on Razorpay to achieve early revenue and train the pixel.
 
+---
+
+## 14. October 9, 2026: Strict ₹200 Lifetime Budget & Creative Split Deployment
+
+### User Requirement & Strategy
+* The user requested a strict lifetime spend cap of **₹200** with no extra spend risk, split across creatives and days.
+* Because Meta API forbids changing an existing recurring daily budget ad set into a non-recurring lifetime budget directly (`OAuthException code: 100, subcode: 1885257`), a fresh dedicated lifetime ad set was provisioned.
+* The previous daily ad set (`120251976766310548`) was immediately **PAUSED** to prevent budget overruns.
+
+### Active Lifetime Ad Set Specs
+* **Ad Set ID**: `120252002068250548` (`SkillQuery_Lifetime_200_2Days_Ladder`)
+* **Campaign ID**: `120251959210780548` (`SkillQuery_FB_Monetization_Sales_Oct2026_v1`)
+* **Lifetime Budget**: `20000` paise = **₹200.00 INR**
+* **Duration**: 48 Hours (2 Days: Oct 9, 2026 – Oct 11, 2026) -> ~₹100/day pacing.
+* **Optimization Goal**: `OFFSITE_CONVERSIONS` (`INITIATED_CHECKOUT`)
+* **Bid Strategy**: `LOWEST_COST_WITHOUT_CAP`
+* **Status**: `ACTIVE` 🟢
+
+### Active Creatives Split (100% Policy-Safe Static Proofs)
+1. **Ad 1**: `120252002081900548` (`SkillQuery - Before/After Proof Image`)
+   * Creative ID: `1933172714312622` (Hash: `2dc0e59bc7026d7a268364f9094a70c3`)
+   * Proven 12% CTR winner showing policy resolution & ₹1,48,920 payout.
+2. **Ad 2**: `120252002082000548` (`SkillQuery - Dashboard Earning Proof Image`)
+   * Creative ID: `1750112976281268` (Hash: `02730f0589a28786be290ad94f4f12e5`)
+   * Clean Meta Creator Studio desktop capture ($5,892.40 monthly earning proof).
+* **Guaranteed Budget Ceiling**: Meta's auction pacing will spend at most ₹200 total across the 2 days and automatically stop at `end_time` without exceeding budget.
+
+
 
